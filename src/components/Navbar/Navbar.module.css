@@ -1,0 +1,29 @@
+.navbar {
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.navbar_log {
+    display: block;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.80em;
+    font-weight: 700;
+    /* font-size: clamp(2rem, 1rem + 10vw, 5rem); */
+    list-style-type: none;
+}
+
+
+/* still working... */
+.theme {
+    border: 0px;
+    border-radius: 4px;
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    font-size: 12px;
+}

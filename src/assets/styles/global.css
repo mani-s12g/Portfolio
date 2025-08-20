@@ -1,69 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* .roboto-condensed-<uniquifier> {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+:root {
+  /* Font families */
+  /* --font-primary: "Roboto", sans-serif; */
+  /* --font-secondary: "Roboto Condensed", sans-serif; */
+
+  /* Font weights */
+  /* --font-weight-normal: 400; */
+  /* --font-weight-bold: 700; */
+
+  /* Colors */
+  /* --color-bg: #000000;
+  --color-bg-invert: #ff4800;
+  --color-text: #ff4800;
+  --color-accent: #ffb300;
+  --color-muted: #ccc;
+  --color-scrollbar-bg: #eee;
+  --color-scrollbar-thumb: #ccc; */
+}
+
+/* ...existing code... */
 /* Reset some default browser styles */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4px;
 }
 
 /* Set base font and background */
-html, body {
-    height: 100%;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 16px;
-    background-color: #f9f9f9;
-    color: #222;
-    line-height: 1.6;
+html,
+body {
+  /* height: 100%; */
+  /* font-family: "Segoe UI", Arial, sans-serif; */
+  /* font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6; */
 }
 
 /* Remove list styles */
-ul, ol {
+/* ul, ol {
     list-style: none;
-}
+} */
 
 /* Remove link underline and set color */
-a {
+/* a {
     text-decoration: none;
     color: inherit;
-}
+} */
 
 /* Images responsive */
-img {
+/* img {
     max-width: 100%;
     height: auto;
     display: block;
-}
+} */
 
 /* Button styles reset */
-button {
+/* button {
     background: none;
     border: none;
     cursor: pointer;
     font: inherit;
-}
+} */
 
 /* Input and textarea reset */
-input, textarea {
+/* input, textarea {
     font: inherit;
     border: none;
     outline: none;
     background: none;
-}
+} */
 
 /* Utility classes */
-.container {
+/* .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-}
+} */
 
 /* Scrollbar styling (optional) */
-::-webkit-scrollbar {
-    width: 8px;
-    background: #eee;
+/* ::-webkit-scrollbar {
+  width: 8px;
+  background: #eee;
 }
 ::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 4px;
-}
+  background: #ccc;
+  border-radius: 4px;
+} */

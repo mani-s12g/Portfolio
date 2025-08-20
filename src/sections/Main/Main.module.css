@@ -1,0 +1,7 @@
+.container {
+    /* display: flex; */
+}
+
+.heading {
+    /* font-size: clamp(1.2rem, 1rem + 10vw, 6rem); */
+}
