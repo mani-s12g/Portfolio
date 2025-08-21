@@ -1,0 +1,67 @@
+.footer {
+}
+.footer_div {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.78em;
+  font-weight: 700;
+  /* font-size: clamp(2rem, 1rem + 10vw, 5rem); */
+  list-style-type: none;
+}
+
+/* .footer_links .icon {
+  display: none;
+}
+.footer_links .text {
+  display: inline;
+} */
+
+.icon {
+    display: none;
+    font-family: 'Material Icons Outlined';
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.email .icon:before {
+    content: "\eef6";
+}
+.linkedin .icon:before {
+    content: "\eeb6";
+}
+.github .icon:before {
+    content: "\f09b";
+}
+
+@media (max-width: 600px) {
+  /* .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  } */
+  /* .footer_links .icon {
+    display: inline;
+  }
+  .footer_links .text {
+    display: none;
+  } */
+
+    .icon {
+    display: inline-block;
+  }
+  .text {
+    display: none;
+  }
+  /* .email:before {
+    font-family: "Unicons";
+    content: "\eef6";
+    font-size: 1.2em;
+    margin-right: 0.5em;
+    display: inline-block;
+  } */
+}
