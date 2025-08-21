@@ -1,0 +1,59 @@
+@media (min-width: 900px) {
+  .cursorBall {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle at 50% 50%,
+      #ffbe5e,
+      #ffec5a,
+      /* #86ff82, */ /* #0011ff, */ /* #ff00b3, */ #ff0000,
+      #ff8800,
+      #ffee00
+    );
+    box-shadow: 0 0 30px 10px rgba(255, 200, 0, 0.3);
+    z-index: 2147483647;
+    transition: left 0.1s linear, top 0.1s linear;
+    mix-blend-mode: lighten;
+    animation: spinBubble 2s linear infinite;
+    filter: blur(1px);
+  }
+
+  @keyframes spinBubble {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.08) skew(2deg, 2deg);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+}
+
+/* .spark {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fffbe5 60%, #ffbe5e 100%, transparent 100%);
+  box-shadow: 0 0 8px 2px #ffbe5e99, 0 0 2px 1px #fffbe5cc;
+  z-index: 2147483646;
+  animation: sparkFade 0.35s linear forwards;
+  mix-blend-mode: lighten;
+}
+
+@keyframes sparkFade {
+  from {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+} */
