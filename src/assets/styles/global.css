@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* .roboto-condensed-<uniquifier> {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
 :root {
   /* Font families */
   --font-primary: "Roboto", sans-serif;
@@ -36,6 +29,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 4px;
+  cursor: none;
 }
 
 /* Set base font and background */
