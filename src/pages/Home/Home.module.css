@@ -1,0 +1,13 @@
+.parent_main {
+  display: flex;
+  flex-direction: column; /*stack: header → main → footer*/
+  min-height: 78vh;
+  position: relative;
+  z-index: 0;
+}
+
+@media (min-width: 1024px) {
+  .parent_main {
+    min-height: 85vh;
+  }
+}

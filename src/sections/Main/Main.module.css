@@ -1,10 +1,17 @@
+.mainStyle {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  justify-content: center;
+  margin: 0 auto;
+  flex: 1 1;
+  overflow: hidden;
+      /* padding: 2rem 0; */
+}
+
 .heading1 {
-  font-size: clamp(1.2rem, 1rem + 10vw, 6rem);
-  /* background: linear-gradient(90deg, #ffbe5e, #ffec5a, #86ff82);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent; */
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h1);
 }
 
 .viewBtn {
@@ -15,11 +22,22 @@
   border-radius: 15px;
   color: var(--color-text);
   transition: background-color 1s;
-  /* transition: color 0.15s; */
 }
 
 .viewBtn:hover {
   background-color: var(--color-text);
   color: var(--color-bg);
   cursor: pointer;
+}
+
+
+@media (min-width: 760px) {
+  .mainStyle {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0 auto;
+    flex: 1 1;
+  }
 }
