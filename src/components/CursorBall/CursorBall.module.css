@@ -1,59 +1,76 @@
 @media (min-width: 900px) {
   .cursorBall {
     position: fixed;
-    left: 0;
-    top: 0;
     width: 50px;
     height: 50px;
-    pointer-events: none;
     border-radius: 50%;
-    background: radial-gradient(
-      circle at 50% 50%,
-      #ffbe5e,
-      #ffec5a,
-      /* #86ff82, */ /* #0011ff, */ /* #ff00b3, */ #ff0000,
-      #ff8800,
-      #ffee00
-    );
-    box-shadow: 0 0 30px 10px rgba(255, 200, 0, 0.3);
-    z-index: 2147483647;
-    transition: left 0.1s linear, top 0.1s linear;
-    mix-blend-mode: lighten;
-    animation: spinBubble 2s linear infinite;
-    filter: blur(1px);
+    border: 2px solid var(--color-brand-secondary); /* outline look */
+    background: var(--color-brand-secondary); /* see-through so text stays visible */
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.25s ease-out;
+    pointer-events: none; /* never blocks clicks */
+    mix-blend-mode: difference;
+    z-index: 1000; /* stays on top but below text */
+    filter: blur(5px);
   }
 
-  @keyframes spinBubble {
-    0% {
-      transform: rotate(0deg) scale(1);
-    }
-    50% {
-      transform: rotate(180deg) scale(1.08) skew(2deg, 2deg);
-    }
-    100% {
-      transform: rotate(360deg) scale(1);
-    }
+  .cursorBall.big {
+    transform: translate(-50%, -50%) scale(2.5); /* grows on hover */
   }
+  .innerCursorBall {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-brand-secondary); /* solid fill */
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 1001; /* above outer ball, still doesn’t block clicks */
+  }
+
+  /* .cursorBall {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 9999;
+    opacity: 0.9;
+  }
+
+  .big {
+    transform: translate(-50%, -50%) scale(6);
+    opacity: 1;
+  } */
+
+  /* .innerCursorBall {
+    position: fixed;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    transition: width 0.1s height 0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
 }
-
-/* .spark {
-  position: fixed;
-  pointer-events: none;
-  border-radius: 50%;
-  background: radial-gradient(circle, #fffbe5 60%, #ffbe5e 100%, transparent 100%);
-  box-shadow: 0 0 8px 2px #ffbe5e99, 0 0 2px 1px #fffbe5cc;
-  z-index: 2147483646;
-  animation: sparkFade 0.35s linear forwards;
-  mix-blend-mode: lighten;
-}
-
-@keyframes sparkFade {
-  from {
-    opacity: 0.8;
-    transform: scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: scale(0.5);
-  }
+  .outerCursorBall {
+    position: fixed;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.2s;
+    transform: translate(-50%, -50%);
+    pointer-events: 1ms;
+    mix-blend-mode: difference;
 } */
+}
