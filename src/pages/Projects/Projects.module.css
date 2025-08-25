@@ -1,0 +1,68 @@
+.intro {
+  font-family: var(--font-family-poppins);
+  padding: 1.2rem 0.2rem 0.5rem 0.2rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-morerelaxed);
+}
+
+.cards_layout {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cards_body {
+  border: 1px solid var(--color-white-muted-3);
+  border-radius: 4px;
+  padding: 1rem 0.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-white-muted-3);
+}
+
+.cards_body h2 {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 1px;
+}
+
+.cards_body small {
+  /* font-size: var(--font-size-p); */
+  /* font-weight: var(--font-weight-regular); */
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        /* font-size: var(--font-size-tooltip); */
+    }
+  .cards_layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    border-radius: 0px;
+  }
+  .cards_body {
+    max-width: 300px;
+    min-height: 250px;
+    overflow-y: auto;
+  }
+  .cards_body h2 {
+    margin-bottom: 1.2rem;
+    color: rgb(255, 255, 255);
+  }
+  .cards_body p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  .cards_body small {
+    font-size: 12px;
+    color: var(--color-accent);
+    margin-bottom: 0.7rem;
+    line-height: var(--line-height-tight);
+  }
+}

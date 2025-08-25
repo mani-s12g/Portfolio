@@ -1,0 +1,87 @@
+.bioSection {
+  /* line-height: var(--line-height-morerelaxed); */
+  /* word-spacing: 1.2px; */
+  display: grid;
+  /* grid-template-columns: 0.5fr 1fr; */
+  /* gap: 0.1rem; */
+  /* place-items: center; */
+  /* justify-items: center; */
+  /* margin-bottom: 2rem; */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.headshot {
+  border: 1px solid var(--colors-white);
+  border-radius: 4px;
+  margin: 2rem 0rem 2.2rem 0rem;
+  width: 100%;
+  max-width: 350px;
+  min-height: 300px;
+  background-color: var(--colors-purple);
+}
+.headshot .headShotPic {
+}
+.bio {
+  font-family: var(--font-family-poppins);
+  padding: 1.2rem 0.2rem 0.5rem 0.2rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-light);
+  line-height: 2rem;
+  word-spacing: 3.5px;
+}
+
+.aboutBtn {
+  font-size: 0.75em;
+  padding: 1em 1em;
+  background-color: var(--color-background);
+  border: 0px;
+  letter-spacing: 0px;
+  color: var(--colors-white);
+  font-size: var(--font-size-small);
+  transition: all 0.3s;
+  font-weight: var(--font-weight-semibold);
+}
+
+.aboutBtn:hover {
+  border: 0px solid transparent;
+  border-radius: 6px;
+  padding: 1em 1em;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.careerSection {
+  font-family: var(--font-family-poppins);
+  /* padding: 1.2rem 0.2rem 0.5rem 0.2rem; */
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-light);
+  line-height: 2rem;
+  word-spacing: 3.5px;
+  margin: 4.5rem 0rem;
+}
+.careerSection p {
+  color: var(--colors-white);
+  margin-bottom: 0rem;
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-semibold);
+}
+.career {
+  margin: 1.2rem 0rem 2.2rem 0rem;
+}
+.career p {
+  color: var(--colors-white);
+  font-size: var(--font-size-small);
+  margin-bottom: 0rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.career span strong {
+  color: var(--color-text);
+  font-size: var(--font-size-tooltip);
+  text-decoration: underline;
+}
+.career span {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-tooltip);
+}

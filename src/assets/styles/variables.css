@@ -1,0 +1,93 @@
+:root {
+  /* 📚 Font Families */
+  --font-family-roboto: "Roboto", sans-serif; /* Headings */
+  --font-family-poppins: "Poppins", sans-serif; /* Body, UI text */
+  --font-family-mono: "Fira Code", monospace;
+  --font-family-cabin: "Cabin Condensed", sans-serif;
+
+  /* Brand Color Palette (base hues) */
+  --colors-yellow: #ffff80;
+  --colors-pink: #ff80bf;
+  --colors-purple: #9580ff;
+  --colors-red: #ff9580;
+  --colors-orange: #ffca80;
+  --colors-green: #8aff80;
+  --colors-cyan: #80ffea;
+  --colors-white: #ffffff;
+  --colors-black: #000000;
+  --colors-lightgray: #f2f2f2;
+  --colors-slategray: #8f9ba8;
+  --colors-blackrock: #08070b; /* true near-black */
+  --colors-hover: #212024;
+
+  /* Whites / neutrals */
+  --color-white-muted-3: #e5e7eb; /* Muted border gray */
+  /* Backgrounds */
+  --color-logo: var(--colors-white);
+  --color-text: var(--colors-lightgray); /* Dark text */
+  --color-text-muted: var(--colors-slategray); /* Muted gray */
+  --color-background: var(--colors-blackrock); /* Light background */
+  --color-hover: var(--color-white-muted-3); /* Light hover state */
+
+  /* Container widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-xxl: 1440px;
+  --container-xxxl: 2560px;
+
+  /* Base font size (body text) */
+  --font-size-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+
+  /* Headings */
+  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 5rem);
+  --font-size-h2: clamp(2rem, 1.2rem + 2vw, 3.5rem);
+  --font-size-h3: clamp(1.75rem, 1.1rem + 1.5vw, 2.5rem);
+  --font-size-h4: clamp(1.5rem, 1rem + 1vw, 2rem);
+  --font-size-h5: clamp(1.25rem, 0.9rem + 0.5vw, 1.5rem);
+  --font-size-h6: clamp(1.1rem, 0.8rem + 0.3vw, 1.25rem);
+
+  /* Paragraph & small text */
+  --font-size-p: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
+  --font-size-small: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+
+  /* Buttons */
+  --font-size-button: clamp(0.9rem, 0.8rem + 0.4vw, 1.1rem);
+
+  /* Navbar menu links */
+  --font-size-navbar: clamp(1rem, 0.9rem + 0.3vw, 1.25rem);
+
+  /* Header (like top hero slogans, site title) */
+  --font-size-header: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+  --font-header-text: 0.75rem;
+  /* Footer text */
+  --font-size-footer: clamp(0.85rem, 0.75rem + 0.2vw, 1rem);
+  --font-footer-text: 2.0625;
+  /* Tooltip text (small & readable) */
+  --font-size-tooltip: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+
+  /* =====================
+     🏋️ Font Weights
+     ===================== */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* =====================
+     📏 Line Heights
+     ===================== */
+  --line-height-default: 1.6; /* Default */
+  --line-height-tight: 1.1; /* Headlines */
+  --line-height-snug: 1.3; /* Sub-headings */
+  --line-height-normal: 1.5; /* Body text */
+  --line-height-relaxed: 1.75; /* Long paragraphs */
+  --line-height-morerelaxed: 2; /* Long paragraphs */
+}
+
+/* 🌙 Dark Theme */
+/* [data-theme="dark"] { */
+
+/* } */

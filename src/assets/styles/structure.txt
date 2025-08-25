@@ -1,0 +1,25 @@
+src/
+│── App.jsx
+│── assets/
+│   ├── styles/
+│   │   ├── global.css
+│   │   └── variables.css
+│   ├── images/
+│   └── icons/
+│── components/
+│   ├── common/      (Button, Card, etc.)
+│   ├── layout/      (Header, Footer, etc.)
+│── context/         (ThemeContext.jsx)
+│── hooks/           (custom hooks)
+│── layout/
+│   └── Layout.jsx
+│── pages/
+│   ├── Home/
+│   │   ├── Home.jsx
+│   │   └── Home.module.css
+│   ├── About/
+│   ├── Skills/
+│   ├── Projects/
+│   └── Contact/
+│── utils/
+│   └── apiClient.js
