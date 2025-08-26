@@ -84,7 +84,7 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 6px;
 } */
- .nav ul:hover {
+ .nav ul a:hover {
   color: var(--colors-white);
 }
 .nav-highlight {

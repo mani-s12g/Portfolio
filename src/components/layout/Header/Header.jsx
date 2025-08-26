@@ -47,12 +47,12 @@ function Header() {
       </div>
       <nav className={styles.nav} ref={navRef}>
         <ul onMouseLeave={handleMouseLeave}>
-          {["ABOUT", "PROJECTS", "SKILLS", "STACKS", "CONTACT"].map(
+          {["ABOUT", "PROJECTS", "CERTIFICATONS & COURSES", "TECH STACKS"].map(
             (item, index) => {
               return (
                 <li key={index}>
                   <NavLink
-                    to={`/${item.toLowerCase()}`}
+                    to={`/${item}`}
                     className={({ isActive }) =>
                       `${isActive ? styles.active : ""}`
                     }

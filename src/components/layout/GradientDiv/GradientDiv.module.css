@@ -1,22 +1,24 @@
 .gradientHeadingDiv {
-  display: block;
-  color: var(--color-text);
-  line-height: var(--line-height-snug);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 1.2rem 0.2rem 0.5rem 0.2rem;
-}
-
-.gradient_text {
-  font-family: var(--font-family-poppins);
-  font-size: 2.7rem;
+  /* color: var(--color-text); */
   background-image: linear-gradient(
-    140deg,
-    var(--colors-cyan) 0%,
-    var(--colors-green) 100%
+    135deg,
+    var(--gradient-start, var(--colors-cyan)) 0%,
+    var(--gradient-end, var(--colors-green)) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+
+.gradient_text {
+  line-height: var(--line-height-snug);
+  font-family: var(--font-family-poppins);
+  font-size: 2.7rem;
 }
 
 @media (min-width: 768px) {

@@ -6,7 +6,11 @@ import projects from "../../config/projects";
 function Projects() {
   return (
     <div>
-      <GradientDiv keywords={projects.keywords} />
+      <GradientDiv
+        keywords={projects.keywords}
+        gradientStart="#8aff80"
+        gradientEnd="#80ffea"
+      />
       <div className={styles.intro}>
         <p>
           {projects.intro} Lorem ipsum dolor sit amet consectetur adipisicing
@@ -15,7 +19,7 @@ function Projects() {
           laborum esse! Necessitatibus, fuga. Ex, quod.{" "}
         </p>
       </div>
-      
+
       <div className={styles.cards_layout}>
         {projects.details.map((item, index) => {
           return (

@@ -2,14 +2,19 @@ import React from "react";
 import GradientDiv from "../../components/layout/GradientDiv/GradientDiv";
 import about from "../../config/about";
 import styles from "./About.module.css";
+import me from "../../assets/images/meBG.png";
 
 function About() {
   return (
     <div>
-      <GradientDiv keywords={about.keywords} />
+      <GradientDiv
+        keywords={about.keywords}
+        gradientStart="#ff80bf"
+        gradientEnd="#9580ff"
+      />
       <section className={styles.bioSection}>
         <div className={styles.headshot}>
-          <img src={about.headShotPic} alt="" srcset="" />
+          <img src={me} alt="" srcset="" />
         </div>
         <div className={styles.bio}>{about.bioIntro}</div>
       </section>
