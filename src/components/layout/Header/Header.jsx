@@ -47,7 +47,7 @@ function Header() {
       </div>
       <nav className={styles.nav} ref={navRef}>
         <ul onMouseLeave={handleMouseLeave}>
-          {["ABOUT", "PROJECTS", "CERTIFICATONS & COURSES", "TECH STACKS"].map(
+          {["ABOUT", "EXPERIENCE", "PROJECTS", "CERTIFICATONS & COURSES", "TECH STACKS"].map(
             (item, index) => {
               return (
                 <li key={index}>

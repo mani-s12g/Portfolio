@@ -15,6 +15,8 @@ import Skills from "./pages/Skills/Skills";
 
 // Global Styles
 import "./assets/styles/global.css";
+import Experience from "./pages/Experience/Experience";
+import ProjectDetail from "./pages/Projects/ProjectDetail";
 
 function App() {
   return (
@@ -26,9 +28,11 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/projects/:projectSlug" element={<ProjectDetail />} />
           </Route>
         </Routes>
       </Router>

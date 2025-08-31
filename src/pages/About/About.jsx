@@ -1,8 +1,9 @@
 import React from "react";
-import GradientDiv from "../../components/layout/GradientDiv/GradientDiv";
+import GradientDiv from "../../components/ui/GradientDiv/GradientDiv";
 import about from "../../config/about";
 import styles from "./About.module.css";
 import me from "../../assets/images/meBG.png";
+import EmphasisText from "../../components/ui/GradientDiv/Emphasis/EmphasisText";
 
 function About() {
   return (
@@ -16,13 +17,44 @@ function About() {
         <div className={styles.headshot}>
           <img src={me} alt="" srcset="" />
         </div>
-        <div className={styles.bio}>{about.bioIntro}</div>
+        <div className={`${styles.bio} inter-body`}>
+          <p>
+            {about.bioIntro.flatMap((part, i) => {
+              if (typeof part === "string") {
+                return part.split("\n").map((line, j, arr) => (
+                  <React.Fragment key={`${i}-${j}`}>
+                    {line}
+                    {j < arr.length - 1 && <br />}
+                  </React.Fragment>
+                ));
+              }
+              return (
+                <EmphasisText key={i} color={part.color}>
+                  {part.text}
+                </EmphasisText>
+              );
+            })}
+          </p>
+        </div>
       </section>
       {/* <span> */}
-      <button className={styles.aboutBtn}>Copy Bio.</button>
-      <button className={styles.aboutBtn}>Download Headshot.</button>
-      <button className={styles.aboutBtn}>Checkout Resume.</button>
+
       {/* </span> */}
+
+      <div className={styles.shrinkDiv}>
+        <p>Bio</p>
+        <p className="inter-body">
+          This is made for Human Resources, Referrer and Recommender to
+          copy-and-paste.
+        </p>
+        <div>
+          <p id={styles.bioPara}>{about.bioCopy}</p>
+        </div>
+      </div>
+
+      <button className={styles.aboutBtn}>Copy Bio.</button>
+      <button className={styles.aboutBtn}>Visit Resume.</button>
+      
       <section className={styles.careerSection}>
         <p>Career</p>
         <div>

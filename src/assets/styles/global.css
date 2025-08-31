@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('./variables.css');
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("./variables.css");
 
 /* Reset some default browser styles */
 *,
@@ -39,8 +41,6 @@ body {
   line-height: var(--line-height-default);
 }
 
-
-
 /* Layout wrapper */
 .app-layout {
   width: 100%;
@@ -57,11 +57,30 @@ main {
   flex: 1; /* push footer to bottom */
 }
 
+.montserrat-heading {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* bold */
+  font-style: normal;
+}
 
+.montserrat-body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* normal */
+  font-style: normal;
+}
 
+.inter-body {
+  font-family: var(--font-family-inter);
+  padding: 1.2rem 0.2rem 0.5rem 0.2rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-morerelaxed);
+}
 
 /* Utility classes */
-
 
 /* Scrollbar styling (optional) */
 ::-webkit-scrollbar {
@@ -72,7 +91,6 @@ main {
   background: #ccc;
   border-radius: 4px;
 }
-
 
 /* Remove list styles */
 /* ul, ol {
@@ -107,4 +125,3 @@ main {
     outline: none;
     background: none;
 } */
-
