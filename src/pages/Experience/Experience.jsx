@@ -1,4 +1,4 @@
-import React, { } from "react";
+import React from "react";
 import styles from "./Experience.module.css";
 import GradientDiv from "../../components/ui/GradientDiv/GradientDiv";
 import { experience } from "../../config/projects";
@@ -17,8 +17,8 @@ function Experience() {
     <div>
       <GradientDiv
         keywords={experience.expkeywords}
-        gradientStart="#ff80bf"
-        gradientEnd="#9580ff"
+        gradientStart="#9580ff"
+        gradientEnd="#80ffea"
       />
 
       <div className="inter-body">
@@ -34,21 +34,27 @@ function Experience() {
       </div>
 
       <section className={styles["experienceSection"]}>
-        <p>Professional Experience</p>
+        <h2>Professional Experience</h2>
+        <hr />
         <div>
           {experience.expArr.map((item, index) => {
             return (
               <div key={index} className={styles.experience}>
                 <div className={styles["exp-div-inner"]}>
                   <p>{item.designation}</p>
-                  <span>
+                  {/* <span>
                     <strong> {item.company}</strong> &nbsp; {item.fromDate} -{" "}
-                    {item.toDate}. {item.totalYears}
+                    {item.toDate} • {item.totalYears}
+                  </span> */}
+
+                  <span>
+                    <strong>{item.company}</strong>
+                    <small className={styles.duration}>
+                      &nbsp; {item.fromDate} - {item.toDate} • {item.totalYears}
+                    </small>
                   </span>
                   <br />
-                  <br />
-                  {/* Technologies */}
-                  <ChipsList items={item.technologies} color="primary" />
+                  <ChipsList items={item.technologies} color="info" />
                   <br />
                   <p>Key Achievements</p>
                   <ul className="inter-body">
@@ -63,7 +69,7 @@ function Experience() {
                   >
                     View related projects →
                   </button>
-                  <hr />
+                  {/* <hr /> */}
                 </div>
               </div>
             );

@@ -20,13 +20,15 @@
 }
 .footer .icon {
   color: var(--color-white-muted-3);
-  font-size: 18px;         /* ✅ fix icon size */
+  font-size: 18px; /* ✅ fix icon size */
   transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 .footer .text {
   display: none;
 }
-
+.footer a {
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   .footer .text {
     display: inline;
@@ -39,7 +41,7 @@
   .footer .icon {
     opacity: 0;
     transform: translateX(6px); /* prepare for slide-in */
-    visibility: hidden;   /* invisible but still reserves space */
+    visibility: hidden; /* invisible but still reserves space */
   }
 
   .footer li:hover .text {

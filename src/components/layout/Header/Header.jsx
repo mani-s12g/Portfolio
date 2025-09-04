@@ -47,18 +47,17 @@ function Header() {
       </div>
       <nav className={styles.nav} ref={navRef}>
         <ul onMouseLeave={handleMouseLeave}>
-          {["ABOUT", "EXPERIENCE", "PROJECTS", "CERTIFICATONS & COURSES", "TECH STACKS"].map(
+          {["Home","About", "Experience", "Projects", "Certifications"].map(
             (item, index) => {
               return (
-                <li key={index}>
+                <li key={index} onMouseEnter={handleMouseEnter}>
                   <NavLink
-                    to={`/${item}`}
+                    to={item != "Home" ? `/${item}` : `/`}
                     className={({ isActive }) =>
                       `${isActive ? styles.active : ""}`
                     }
-                    onMouseEnter={handleMouseEnter}
                   >
-                    {item}
+                    {item.toUpperCase()}
                   </NavLink>
                 </li>
               );

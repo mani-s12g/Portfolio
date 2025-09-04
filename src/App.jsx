@@ -6,6 +6,9 @@ import CursorBall from "./components/common/CursorBall/CursorBall";
 // App-Layout
 import Layout from "./layout/Layout";
 
+// Scroll to Top
+import ScrollToTop from "./components/common/ScrollToTop";
+
 // Pages
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -17,12 +20,16 @@ import Skills from "./pages/Skills/Skills";
 import "./assets/styles/global.css";
 import Experience from "./pages/Experience/Experience";
 import ProjectDetail from "./pages/Projects/ProjectDetail";
+import Certifications from "./pages/Certifications/Certifications";
+import CustomCursor from "./components/common/CustomCursor/CustomCursor";
 
 function App() {
   return (
     <>
       {/* <CursorBall /> */}
+      {/* <CustomCursor /> */}
       <Router>
+        <ScrollToTop /> {/* 🔹 Force scroll to top on route change */}
         {/* routes */}
         <Routes>
           <Route element={<Layout />}>
@@ -31,6 +38,7 @@ function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/certifications" element={<Certifications />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects/:projectSlug" element={<ProjectDetail />} />
           </Route>

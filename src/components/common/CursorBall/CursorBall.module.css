@@ -4,14 +4,14 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid var(--color-brand-secondary); /* outline look */
-    background: var(--color-brand-secondary); /* see-through so text stays visible */
+    border: 2px solid var(--colors-yellow); /* outline look */
+    background: var(--colors-yellow); /* see-through so text stays visible */
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.25s ease-out;
     pointer-events: none; /* never blocks clicks */
     mix-blend-mode: difference;
-    z-index: 1000; /* stays on top but below text */
-    filter: blur(5px);
+    z-index: 1001; /* stays on top but below text */
+    filter: blur(1px);
   }
 
   .cursorBall.big {
@@ -22,7 +22,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: var(--color-brand-secondary); /* solid fill */
+    background: var(--colors-yellow); /* solid fill */
     transform: translate(-50%, -50%);
     pointer-events: none;
     mix-blend-mode: difference;

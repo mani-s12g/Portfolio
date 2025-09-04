@@ -52,9 +52,9 @@ function About() {
         </div>
       </div>
 
-      <button className={styles.aboutBtn}>Copy Bio.</button>
-      <button className={styles.aboutBtn}>Visit Resume.</button>
-      
+      {/* <button className={styles.aboutBtn}>Copy Bio.</button> */}
+      {/* <button className={styles.aboutBtn}>Visit Resume.</button> */}
+
       <section className={styles.careerSection}>
         <p>Career</p>
         <div>
@@ -67,7 +67,7 @@ function About() {
                 </span>
                 <br />
                 <span>
-                  {item.fromDate} - {item.toDate}. {item.totalYears}
+                  {item.fromDate} - {item.toDate} • {item.totalYears}
                 </span>
               </div>
             );

@@ -1,0 +1,25 @@
+.customCursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+
+  /* Visible background with gradient */
+  background: linear-gradient(45deg, #ff0080, #7928ca, #2afadf, #ff8c00);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+
+  /* Center the circle on the mouse */
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out; /* smoothness */
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

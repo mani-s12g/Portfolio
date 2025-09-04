@@ -17,6 +17,7 @@ html,
 body {
   height: 100%;
   /* cursor: none; only if you're replacing cursor */
+  /* cursor: pointer; */
 }
 
 /* Set base font and background */

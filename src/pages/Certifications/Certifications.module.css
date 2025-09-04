@@ -1,0 +1,83 @@
+.certifications {
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* overflow-x: scroll; */
+}
+
+.certifications h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--colors-white);
+  font-family: var(--font-family-poppins);
+}
+
+.certFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  color: var(--colors-white);
+  border-radius: 6px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  width: 280px;
+  flex: 0 1 auto;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.cardIn {
+  height: 200px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  /* background: rgba(255, 255, 255, 0.15); */
+}
+
+.card img {
+  height: 60px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  /* filter: brightness(0) invert(1); makes logos light for dark mode */
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1rem;
+  color: var(--colors-white);
+  font-family: var(--font-family-poppins);
+
+}
+
+.viewBtn {
+  font-size: 0.75em;
+  padding: 1em 1em;
+  background-color: var(--color-background);
+  border: 0px;
+  letter-spacing: 1.2px;
+  color: var(--colors-white);
+  transition: all 0.3s;
+  margin-top: 0.5rem;
+  /* font-weight: 300; */
+}
+
+.viewBtn:hover {
+  border: 0px solid transparent;
+  border-radius: 6px;
+  padding: 1em 1em;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}

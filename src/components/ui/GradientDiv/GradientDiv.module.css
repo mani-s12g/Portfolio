@@ -30,3 +30,9 @@
     line-height: 55px;
   }
 }
+
+@media (max-width: 377px) {
+  .gradient_text {
+    font-size: 2.2rem;
+  }
+}
