@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Custom Cursor
@@ -36,7 +36,7 @@ function App() {
     <>
       {/* <CursorBall /> */}
       {/* <CustomCursor /> */}
-      <Router>
+      <Router basename="/Portfolio/">
         <ScrollToTop /> {/* 🔹 Force scroll to top on route change */}
         {/* routes */}
         <Routes>

@@ -1,5 +1,5 @@
 .exp-div-inner {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .experienceSection {
@@ -19,10 +19,25 @@
   /* cursor: pointer; */
 }
 
+.exp-div-inner span strong {
+    /* font-size: 38px !important; */
+}
+    .exp-div-inner span strong small {
+  /* display: block; */
+}
+
 .exp-div-inner .duration {
-    float: right;
-    color: var(--color-text-muted);
-    font-size: 14px;
+  /* float: right; */
+  /* display: block; */
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+.chipss {
+  /* display: flex; */
+  margin: 0.5rem 0rem 2rem 0rem;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .experience p {
@@ -31,8 +46,8 @@
   margin-bottom: 0rem;
   font-weight: var(--font-weight-regular);
 }
-.experience ul li{
-    margin-left: 1rem;
+.experience ul li {
+  margin-left: 1rem;
 }
 .experience span strong {
   color: var(--color-text);
@@ -76,4 +91,12 @@
   padding: 1em 1em;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+}
+
+@media (min-width: 679px) {
+  .exp-div-inner .duration {
+    float: right;
+    color: var(--color-text-muted);
+    font-size: 14px;
+  }
 }

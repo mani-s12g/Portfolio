@@ -42,20 +42,15 @@ function Experience() {
               <div key={index} className={styles.experience}>
                 <div className={styles["exp-div-inner"]}>
                   <p>{item.designation}</p>
-                  {/* <span>
-                    <strong> {item.company}</strong> &nbsp; {item.fromDate} -{" "}
-                    {item.toDate} • {item.totalYears}
-                  </span> */}
-
                   <span>
                     <strong>{item.company}</strong>
-                    <small className={styles.duration}>
-                      &nbsp; {item.fromDate} - {item.toDate} • {item.totalYears}
-                    </small>
+                    <p className={styles.duration}>
+                      {item.fromDate} - {item.toDate} • {item.totalYears}
+                    </p>
                   </span>
-                  <br />
-                  <ChipsList items={item.technologies} color="info" />
-                  <br />
+                  <div className={styles.chipss}>
+                    <ChipsList items={item.technologies} color="info" />
+                  </div>
                   <p>Key Achievements</p>
                   <ul className="inter-body">
                     {item.keyAchievements.map((achievement, index) => (
