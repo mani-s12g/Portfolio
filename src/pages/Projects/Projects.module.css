@@ -1,0 +1,250 @@
+.cards_layout {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.dropdown-view {
+  display: block;
+}
+.tabs-view {
+  display: none;
+}
+
+.dropdown-view {
+  margin: 2rem 0rem !important;
+}
+
+/* custom select and tabs styles */
+.customSelect {
+  font-size: var(--font-size-small) !important;
+  font-weight: var(--font-weight-regular) !important;
+}
+/* style the Select root */
+.customSelect :global(.MuiOutlinedInput-root) {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  color: #f5f5f5;
+}
+
+/* border color */
+.customSelect :global(.MuiOutlinedInput-notchedOutline) {
+  border-color: #666;
+}
+
+.customSelect
+  :global(.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline) {
+  border-color: #aaa;
+}
+
+.customSelect
+  :global(.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline) {
+  border-color: #80ffea;
+}
+
+/* select text */
+.customSelect :global(.MuiSelect-select) {
+  color: #f5f5f5;
+  padding: 8px 12px;
+}
+
+/* dropdown arrow */
+.customSelect :global(.MuiSvgIcon-root) {
+  color: #f5f5f5;
+}
+
+/* dropdown menu */
+.customMenu {
+  background-color: #1e1e1e !important;
+  color: #f5f5f5 !important;
+}
+
+.customMenu :global(.MuiMenuItem-root:hover) {
+  background-color: #333 !important;
+}
+
+.customMenu :global(.Mui-selected) {
+  background-color: #444 !important;
+  color: #80ffea !important;
+}
+
+/* Tabs wrapper */
+.customTabs {
+  margin-top: 2.5rem;
+}
+
+.customTabs :global(.MuiTabs-root) {
+  border-bottom: 1px solid #333; /* bottom line for tabs */
+  min-height: 40px;
+}
+
+/* Tab items */
+.customTabs :global(.MuiTab-root) {
+  color: #aaa; /* inactive text */
+  text-transform: none; /* keep normal case */
+  font-weight: 500;
+  min-height: 40px;
+  padding: 6px 16px;
+}
+
+.customTabs :global(.MuiTab-root:hover) {
+  color: #fff; /* hover text */
+}
+
+.customTabs :global(.MuiTab-root.Mui-selected) {
+  color: #80ffea; /* active tab text color */
+  font-weight: 600;
+}
+
+/* Indicator line */
+.customTabs :global(.MuiTabs-indicator) {
+  background-color: #80ffea; /* active underline color */
+  height: 3px; /* thickness */
+  border-radius: 3px;
+}
+/* custom select and tabs styles */
+
+.card {
+  color: #f5f5f5;
+  width: 250px;
+  max-height: 200px;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* margin-bottom: 60px; */
+  width: 100%;
+}
+
+.card-highlight {
+  position: absolute;
+  max-height: 200px !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  transition: left 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+    top 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+    right 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+    bottom 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+    width 0.45s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.35s ease;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* .card {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  width: 250px;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 60px;
+} */
+
+.cardContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+/* Arrow top-right */
+.cardArrow {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 18px;
+  height: 18px;
+  color: #80ffea;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .cardArrow {
+  transform: translateY(-3px) rotate(15deg);
+  color: #fff;
+}
+
+.projectDuration {
+  font-size: 12px;
+  color: #888;
+}
+
+.projectName {
+  font-family: var(--font-family-poppins);
+  color: var(--colors-white);
+  margin-bottom: 0rem;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-regular);
+
+  height: 22px; /* fixed to prevent shifting */
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.moreDetails {
+  font-size: 11px;
+  color: var(--colors-green);
+}
+.projectdescription {
+  margin-bottom: 0rem;
+  font-size: 13px;
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-muted);
+  margin-top: 10px;
+
+  margin-bottom: 4px;
+  height: 38px;
+  overflow: hidden;
+}
+
+.projectCompany strong {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-tooltip);
+  font-weight: var(--font-weight-regular);
+  text-decoration: underline;
+  margin-bottom: 4px;
+  height: 18px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 45%; /* two cards per row on tablet */
+  }
+
+  .cards_layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    border-radius: 0px;
+  }
+
+  /* Default: Show tabs, hide dropdown */
+  .dropdown-view {
+    display: none;
+  }
+
+  .tabs-view {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 250px;
+    height: 180px;
+    margin-bottom: 21px;
+  }
+}

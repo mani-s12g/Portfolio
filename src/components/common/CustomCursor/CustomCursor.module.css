@@ -1,0 +1,14 @@
+/* global.css or CursorSpot.css */
+.spotlight {
+  position: fixed;
+  top: 0; left: 0;
+  width: 20vmax;
+  height: 20vmax;
+  pointer-events: none;
+  border-radius: 50%;
+  mix-blend-mode: lighten; /* softly brightens background */
+  background: radial-gradient(circle, rgb(80, 80, 80) 0%, transparent 60%);
+  transform: translate(-50%, -50%);
+  transition: transform 0.12s ease-out;
+  z-index: 9998;
+}

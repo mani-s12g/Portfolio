@@ -1,0 +1,79 @@
+.exp-div-inner {
+    margin-bottom: 3rem;
+}
+
+.experienceSection {
+  line-height: 2rem;
+  word-spacing: 3.5px;
+  margin: 3rem 0rem 4.5rem 0rem;
+}
+.experienceSection p {
+  font-family: var(--font-family-poppins);
+  color: var(--colors-white);
+  margin-bottom: 0rem;
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-semibold);
+}
+.experience {
+  margin: 1.2rem 0rem 2.2rem 0rem;
+  /* cursor: pointer; */
+}
+
+.exp-div-inner .duration {
+    float: right;
+    color: var(--color-text-muted);
+    font-size: 14px;
+}
+
+.experience p {
+  color: var(--colors-white);
+  font-size: var(--font-size-small);
+  margin-bottom: 0rem;
+  font-weight: var(--font-weight-regular);
+}
+.experience ul li{
+    margin-left: 1rem;
+}
+.experience span strong {
+  color: var(--color-text);
+  font-size: var(--font-size-tooltip);
+  text-decoration: underline;
+}
+.experience span {
+  /* color: var(--color-text-muted); */
+  /* font-size: var(--font-size-tooltip); */
+}
+.exp-highlight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* center vertically */
+  height: 2.2em; /* match link height + padding */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  transition:
+    left 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+    width 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.35s ease;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.expViewBtn {
+  font-size: 0.75em;
+  padding: 1em 1em;
+  background-color: var(--color-background);
+  border: 0px;
+  letter-spacing: 0px;
+  color: var(--colors-white);
+  font-size: var(--font-size-small);
+  transition: all 0.3s;
+  font-weight: var(--font-weight-semibold);
+}
+
+.expViewBtn:hover {
+  border: 0px solid transparent;
+  border-radius: 6px;
+  padding: 1em 1em;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
