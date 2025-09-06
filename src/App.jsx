@@ -1,4 +1,4 @@
-import {} from "react";
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Custom Cursor
@@ -22,8 +22,16 @@ import Experience from "./pages/Experience/Experience";
 import ProjectDetail from "./pages/Projects/ProjectDetail";
 import Certifications from "./pages/Certifications/Certifications";
 import CustomCursor from "./components/common/CustomCursor/CustomCursor";
+// import applyGradientCursor from 'gradient-cursor';
 
 function App() {
+  // useEffect(() => {
+  //   applyGradientCursor({
+  //     backgroundColor: "#212024",       // page background (optional)
+  //     gradientColor: "40, 40, 60",       // RGB spotlight color
+  //     gradientSize: "15vmax"             // size of the spot
+  //   });
+  // }, []);
   return (
     <>
       {/* <CursorBall /> */}

@@ -43,7 +43,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <NavLink to="/">ʍ</NavLink>
+        <NavLink to="/">M</NavLink>
       </div>
       <nav className={styles.nav} ref={navRef}>
         <ul onMouseLeave={handleMouseLeave}>

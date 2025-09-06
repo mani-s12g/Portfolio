@@ -3,10 +3,10 @@
   flex-direction: column;
   align-items: center;
   padding: 0.75rem 0;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 1000;
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
 }
 .logo {
   width: 100%;
@@ -34,14 +34,15 @@
   font-size: 2rem;
   text-decoration: none;
   color: var(--color-logo);
+  font-family: var(--font-family-pacifico);
 }
+
 
 @keyframes gradientFlow {
   /* 0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; } */
 }
-
 
 .nav {
   display: flex;
@@ -107,7 +108,7 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 6px;
 } */
- .nav ul a:hover {
+.nav ul a:hover {
   color: var(--colors-white);
 }
 .nav-highlight {
@@ -147,6 +148,7 @@
     /* color: var(--color-white-muted-1); */
     /* text-decoration: none; */
     /* font-size: 3rem; */
+    /* transition: color 0.4s ease; */
   }
   .nav {
     overflow: visible; /* remove scrollbar */

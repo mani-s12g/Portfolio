@@ -1,20 +1,20 @@
-import React, { useEffect, useRef } from "react";
-import styles from "./CustomCursor.module.css";
+// SpotlightCursor.jsx
+import React, { useEffect, useRef } from 'react';
+import styles from'./CustomCursor.module.css';
 
 export default function CustomCursor() {
-  const cursorRef = useRef(null);
+  const spot = useRef(null);
 
   useEffect(() => {
-    const moveCursor = (e) => {
-      if (cursorRef.current) {
-        cursorRef.current.style.left = `${e.clientX}px`;
-        cursorRef.current.style.top = `${e.clientY}px`;
+    const move = (e) => {
+      if (spot.current) {
+        spot.current.style.left = `${e.clientX}px`;
+        spot.current.style.top = `${e.clientY}px`;
       }
     };
-
-    document.addEventListener("mousemove", moveCursor);
-    return () => document.removeEventListener("mousemove", moveCursor);
+    document.addEventListener("mousemove", move);
+    return () => document.removeEventListener("mousemove", move);
   }, []);
 
-  return <div className={styles.customCursor} ref={cursorRef}></div>;
+  return <div className={styles.spotlight} ref={spot}></div>;
 }

@@ -7,21 +7,85 @@
   text-align: center;
 }
 
+.gradient {
+  text-align: center;
+}
 .mainStyle h1 {
-  font-family: var(--font-family-roboto);
-  font-size: var(--font-size-h1);
-  font-weight: var(--font-weight-bold);
 }
 
-.mainStyle p strong {
-  color: var(--colors-lightgray);
+.glow {
+  letter-spacing: -1px;
+  /* background: linear-gradient(90deg, #111111, #333333, #111111); */
+  background: linear-gradient(90deg, #111111, #ffffff, #111111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 4s ease-in-out infinite;
+  background-size: 200% auto;
+  font-family: var(--font-family-montserrat);
+  font-weight: var(--font-weight-extrabold);
+  font-size: var(--font-size-h1);
 }
+
+@keyframes glow {
+  0% {
+    background-position: 0% center;
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.05),
+      0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    background-position: 100% center;
+    text-shadow:
+      0 0 15px rgba(255, 255, 255, 0.15),
+      0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  100% {
+    background-position: 0% center;
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.05),
+      0 0 20px rgba(255, 255, 255, 0.1);
+  }
+}
+
 .mainStyle p {
   margin-bottom: 1.25rem;
   color: var(--color-text-muted);
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  font-weight: var(--font-weight-light);
+  letter-spacing: 3px; /* wide for "developer" feel */
+  color: #3b3d4185; /* tailwind gray-400 */
+  margin-top: 0.5rem;
+
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1;
+}
+.frontWhite {
+  background: #fde311;
+  /* background: var(--colors-hover); */
+
+  /* background: linear-gradient(100deg, #9580ff, #ff9580); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.frontGrey {
+  background: var(--colors-hover);
+  background: #3e3b3f;
+  /* background: #988829; */
+
+  /* background: linear-gradient(100deg, #9580ff, #ff9580); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainStyle h4 {
+  font-family: var(--font-family-inter);
+  font-size: 1.125rem; /* readable but elegant */
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-muted);
 }
 
 .viewBtn {
@@ -40,6 +104,43 @@
   padding: 1em 1em;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+}
+
+.shiny-text {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #e5e5e5; /* base text color, light gray instead of pure white */
+  position: relative;
+  overflow: hidden;
+}
+
+.shiny-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shine 4s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  50% {
+    left: 125%;
+  }
+  100% {
+    left: 125%;
+  }
 }
 
 @media (min-width: 760px) {
