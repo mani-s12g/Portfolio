@@ -5,11 +5,42 @@
 .footer ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
   margin-bottom: 0.2rem;
   list-style-type: none;
   padding: 0;
+}
+
+.footerCredits {
+  font-size: 0.8rem; /* small & subtle */
+  color: #9ca3af; /* gray-400 */
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+.footerCredits strong {
+  color: #e5e7eb; /* brighter gray for emphasis */
+  font-weight: 500;
+}
+
+.footerCredits p {
+  margin: 0.25rem 0; /* slight spacing between lines */
+}
+
+.findMe {
+  font-size: 0.8rem; /* small & subtle */
+  color: #9ca3af; /* gray-400 */
+  text-align: center;
+  line-height: 1.6;
+}
+
+.findMe strong {
+  color: #e5e7eb; /* brighter gray for emphasis */
+  font-weight: 500;
 }
 
 .footer li {
@@ -21,7 +52,10 @@
 .footer .icon {
   color: var(--color-white-muted-3);
   font-size: 18px; /* ✅ fix icon size */
-  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 .footer .text {
   display: none;
