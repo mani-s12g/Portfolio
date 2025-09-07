@@ -36,7 +36,7 @@ function App() {
     <>
       {/* <CursorBall /> */}
       {/* <CustomCursor /> */}
-      <Router basename="/Portfolio/">
+      <Router>
         <ScrollToTop /> {/* 🔹 Force scroll to top on route change */}
         {/* routes */}
         <Routes>
