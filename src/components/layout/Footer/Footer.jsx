@@ -20,7 +20,7 @@ function Footer() {
         </p>
         <p>
           Built with ❤️ & Passion not just code, using <strong>React.js</strong>{" "}
-          and <strong>CSS</strong>, deployed on <strong>GitHub Pages</strong>.
+          and <strong>CSS</strong>, deployed on <strong>Vercel.</strong>.
         </p>
       </div>
       <div className={styles.findMe}>
