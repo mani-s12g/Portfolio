@@ -19,7 +19,7 @@ function Main() {
           >
             <span className={styles.glow}>Manikanta</span>
           </div>
-        </h1>
+          </h1>
 
         <p>
           <strong>
@@ -27,7 +27,8 @@ function Main() {
             <span className={styles.frontGrey}>DEVELOPER</span>
           </strong>
         </p>
-        <h4>
+        <h4 className={styles.shimmer} data-text="Passionate about building fast, accessible, & visually striking web
+          applications.">
           Passionate about building fast, accessible, & visually striking web
           applications.
         </h4>

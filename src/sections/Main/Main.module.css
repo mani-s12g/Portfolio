@@ -13,20 +13,21 @@
 .mainStyle h1 {
 }
 
+/* background: linear-gradient(90deg, #111111, #333333, #111111); */
 .glow {
   letter-spacing: -1px;
-  /* background: linear-gradient(90deg, #111111, #333333, #111111); */
-  background: linear-gradient(90deg, #111111, #ffffff, #111111);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: glow 4s ease-in-out infinite;
-  background-size: 200% auto;
+  color: var(--colors-lightgray);
+  /* background: linear-gradient(90deg, #111111, #ffffff, #111111); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* animation: glow 4s ease-in-out infinite; */
+  /* background-size: 200% auto; */
   font-family: var(--font-family-montserrat);
   font-weight: var(--font-weight-extrabold);
   font-size: var(--font-size-h1);
 }
 
-@keyframes glow {
+/* @keyframes glow {
   0% {
     background-position: 0% center;
     text-shadow:
@@ -45,7 +46,47 @@
       0 0 10px rgba(255, 255, 255, 0.05),
       0 0 20px rgba(255, 255, 255, 0.1);
   }
+} */
+
+.shimmer {
+  display: inline-block;
+  font-family: var(--font-family-montserrat);
+  font-weight: var(--font-weight-extrabold);
+  font-size: var(--font-size-h1);
+  letter-spacing: -1px;
+  position: relative;
+  color: #ffffff; /* base text color */
+  overflow: hidden;
 }
+
+.shimmer::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 8s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
 
 .mainStyle p {
   margin-bottom: 1.25rem;
@@ -60,7 +101,8 @@
   line-height: 1;
 }
 .frontWhite {
-  background: #fde311;
+  /* background: #fde311; */
+  background: #fdda11fa;
   /* background: var(--colors-hover); */
 
   /* background: linear-gradient(100deg, #9580ff, #ff9580); */

@@ -76,7 +76,8 @@
   --font-size-footer: clamp(0.85rem, 0.75rem + 0.2vw, 1rem);
   --font-footer-text: 2.0625;
   /* Tooltip text (small & readable) */
-  --font-size-tooltip: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+  /* --font-size-tooltip: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem); */
+  --font-size-tooltip: clamp(0.8rem, 0.75rem + 0.25vw, 0.95rem);
 
   /* =====================
      🏋️ Font Weights

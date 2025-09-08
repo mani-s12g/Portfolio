@@ -21,12 +21,12 @@ const aboutDetails = {
 
     "Previously, I worked as a ",
     {
-      text: "Software Engineer at Infobell IT",
+      text: "Software Engineer at Infobell IT Solutions Pvt. Limited",
       color: "var(--colors-lightgray)",
     },
     " and a ",
     {
-      text: "Software Development Associate at Liquid Lab Infosystems",
+      text: "Software Development Associate at LiquidLab Infosystems",
       color: "var(--colors-lightgray)",
     },
     ".\n\n",
@@ -48,13 +48,13 @@ const aboutDetails = {
     ".",
   ],
   bioCopy:
-    "Manikanta is a programmer based in Bengaluru, India, with 4+ experience as a Software Engineer at Infobell IT and a Software Development Associate at Liquid Lab Infosystems. Passionate about building and sharing web applications, he has worked on end-to-end development — from coding, reviewing, and testing to leading teams, mentoring peers, and collaborating with product designers, backend developers, and DevOps teams to deliver full-fledged projects and solutions.",
+    "Manikanta is a programmer based in Bengaluru, India, with 4+ experience as a Software Engineer at Infobell IT and a Software Development Associate at LiquidLab Infosystems. Passionate about building and sharing web applications, he has worked on end-to-end development — from coding, reviewing, and testing to leading teams, mentoring peers, and collaborating with product designers, backend developers, and DevOps teams to deliver full-fledged projects and solutions.",
 
   headShotPic: "",
   career: [
     {
       designation: "Software Engineer",
-      company: "Infobell IT Solutions Pvt Ltd",
+      company: "Infobell IT Solutions Pvt. Limited",
       basedIn: "Bengaluru, India",
       fromDate: "May 2022",
       toDate: "Mar 2025",
@@ -62,7 +62,7 @@ const aboutDetails = {
     },
     {
       designation: "Software Developement Associate",
-      company: "Liquidlab - IT Solutions Services",
+      company: "LiquidLab Infosystems",
       basedIn: "Bengaluru, India",
       fromDate: "Oct 2020",
       toDate: "May 2022",

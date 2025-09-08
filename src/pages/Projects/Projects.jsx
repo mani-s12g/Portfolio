@@ -170,7 +170,7 @@ function Projects() {
               onMouseLeave={handleCardMouseLeave}
             >
               <div className={styles.cardContent}>
-                <p className={styles.projectName}>{item.name}</p>
+                <p className={styles.projectName}>{item.name.replace(/\s*\(.*?\)\s*/g, "").split(" ").slice(0, 2).join(" ")}</p>
                 <span className={styles.projectCompany}>
                   <strong> {item.company}</strong>
                 </span>

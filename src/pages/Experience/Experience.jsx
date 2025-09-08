@@ -51,8 +51,8 @@ function Experience() {
                   <div className={styles.chipss}>
                     <ChipsList items={item.technologies} color="info" />
                   </div>
-                  <p>Key Achievements</p>
-                  <ul className="inter-body">
+                  <p className={styles.achievements}>Key Achievements</p>
+                  <ul className="inter-body" style={{marginTop: "-8px"}}>
                     {item.keyAchievements.map((achievement, index) => (
                       <li key={index}>{achievement}</li>
                     ))}
