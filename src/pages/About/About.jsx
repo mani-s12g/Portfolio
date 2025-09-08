@@ -4,6 +4,7 @@ import about from "../../config/about";
 import styles from "./About.module.css";
 import me from "../../assets/images/meBG.png";
 import EmphasisText from "../../components/ui/GradientDiv/Emphasis/EmphasisText";
+import CopyBio from "../../components/ui/GradientDiv/CopyBio/CopyBio";
 
 function About() {
   return (
@@ -53,7 +54,8 @@ function About() {
       </div>
 
       {/* <button className={styles.aboutBtn}>Copy Bio.</button> */}
-      {/* <button className={styles.aboutBtn}>Visit Resume.</button> */}
+      <CopyBio bioText={about.bioCopy} />
+      <button className={styles.aboutBtn}>Updating Resume...</button>
 
       <section className={styles.careerSection}>
         <p>Career</p>
