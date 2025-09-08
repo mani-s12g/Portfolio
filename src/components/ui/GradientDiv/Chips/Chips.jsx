@@ -13,7 +13,7 @@ const ChipsList = ({ items = [], color, size = "small" }) => {
           variant="outlined"
           color={color}
           size={size}
-          sx={{ fontSize: "0.8rem", borderRadius: "12px", marginTop: "0.7rem", marginBottom: "0rem" }}
+          sx={{ fontSize: "0.8rem", borderRadius: "12px", marginTop: "0.3rem", marginBottom: "0rem" }}
         />
       ))}
     </Stack>

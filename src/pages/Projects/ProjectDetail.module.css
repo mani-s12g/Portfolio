@@ -2,19 +2,22 @@
   margin-bottom: 3rem;
 }
 
-.projectDetailSection {
-    font-family: var(--font-family-poppins);
-
+.projectDetailSection .roleStyles {
+  margin: 1.2rem 0rem;
 }
 .projectDetailSection {
+  font-family: var(--font-family-poppins);
   line-height: 2rem;
   word-spacing: 3.5px;
   margin: 3rem 0rem 4.5rem 0rem;
 }
 .projectDetailSection .duration {
-    float: right;
-    color: var(--color-text-muted);
-    font-size: 14px;
+  float: right;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  font-family: var(--font-family-roboto);
+  font-weight: var(--font-weight-regular);
+
 }
 .projectDetailSection p {
   /* font-family: var(--font-family-poppins);
@@ -31,65 +34,19 @@
   color: var(--color-text-muted);
   font-size: var(--font-size-small);
   margin-bottom: 1.5rem;
-    font-family: var(--font-family-inter);
-
-  font-weight: var(--font-weight-light);
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
 }
-.companyLink a{
-    color: rgb(87, 152, 218);
+.companyLink a {
+  color: rgb(87, 152, 218);
 }
 .subHeadings {
-    font-family: var(--font-family-poppins);
-  color: var(--colors-white);
-  font-size: var(--font-size-p);
+  font-family: var(--font-family-poppins);
+  color: var(--color-white-muted-3);
+  font-size: var(--font-size-h6);
   margin: 0.2rem 0rem 0rem 0rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
 }
 .experience ul li {
   margin-left: 1rem;
 }
-.experience span strong {
-  color: var(--color-text);
-  font-size: var(--font-size-tooltip);
-  text-decoration: underline;
-}
-.experience span {
-  color: var(--color-text-muted);
-  font-size: var(--font-size-tooltip);
-}
-.exp-highlight {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); /* center vertically */
-  height: 2.2em; /* match link height + padding */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  transition: left 0.45s cubic-bezier(0.25, 1, 0.5, 1),
-    width 0.45s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.35s ease;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.expViewBtn {
-  font-size: 0.75em;
-  padding: 1em 1em;
-  background-color: var(--color-background);
-  border: 0px;
-  letter-spacing: 0px;
-  color: var(--colors-white);
-  font-size: var(--font-size-small);
-  transition: all 0.3s;
-  font-weight: var(--font-weight-semibold);
-}
-
-.expViewBtn:hover {
-  border: 0px solid transparent;
-  border-radius: 6px;
-  padding: 1em 1em;
-  background: rgba(255, 255, 255, 0.1);
-  /* cursor: pointer; */
-}
-
-/* .techchips {
-    margin: 2rem 0rem;
-} */

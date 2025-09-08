@@ -30,13 +30,19 @@
   background-clip: text; */
 }
 .logo a {
-  font-weight: bold;
-  font-size: 2rem;
+  font-weight: 100;
+  font-size: 1rem;
   text-decoration: none;
   color: var(--color-logo);
+  font-style: italic;
   font-family: var(--font-family-pacifico);
 }
 
+.signature {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  color: white;
+}
 
 @keyframes gradientFlow {
   /* 0% { background-position: 0% 50%; }

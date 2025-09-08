@@ -7,7 +7,7 @@ import udemy from "../assets/images/udemy.jpg";
 import hc from "../assets/images/hc.jpg";
 // ✅ Centralized reusable tech stacks
 const techStacks = {
-  frontend: ["HTML", "CSS", "JS", "JQuery", "Bootstrap", "React.js", "Vue.js"],
+  frontend: ["HTML", "CSS", "JS", "JQuery", "Bootstrap", "React", "Vue.js"],
   backend: ["Node.js", "Express.js", "Java"],
   database: ["MongoDB", "Postgres", "MySQL"],
   devops: ["Nginx", "AWS (EC2, S3)", "Docker", "Kubernetes"],
@@ -87,7 +87,7 @@ const experience = {
   expArr: [
     {
       designation: "Software Engineer",
-      company: "Infobell IT Solutions Pvt Ltd",
+      company: "Infobell IT Solutions Pvt. Limited",
       fromDate: "May 2022",
       toDate: "Mar 2025",
       totalYears: "2 yr 10 mos",
@@ -107,7 +107,7 @@ const experience = {
     },
     {
       designation: "Software Developement Associate",
-      company: "Liquidlab - IT Solutions Services",
+      company: "LiquidLab Infosystems",
       fromDate: "Oct 2020",
       toDate: "May 2022",
       totalYears: "1 yr 7 mos",
@@ -117,7 +117,7 @@ const experience = {
         "CSS",
         "Bootstrap",
         "JQuery",
-        "React.js",
+        "React",
         "Nginx",
         "AWS (EC2, S3)",
         "MongoDB",
@@ -161,7 +161,7 @@ const projects = {
     {
       name: "Hardware Benchmarking & Server Management Dashboard (Major Client Project)",
       duration: "Nov 2023 – Mar 2025",
-      company: "Infobell IT Solutions Pvt Ltd",
+      company: "Infobell IT Solutions Pvt. Limited",
       companyLink: "https://www.infobellit.com/",
       role: "Full Stack Developer",
       description:
@@ -188,9 +188,9 @@ const projects = {
     {
       name: "Independent Software Vendor Showcase Platform with Dashboard (Client project, based in USA, leading multinational semiconductor company)",
       duration: "Sep 2023 – Mar 2024",
-      company: "Infobell IT Solutions Pvt Ltd",
+      company: "Infobell IT Solutions Pvt. Limited",
       companyLink: "https://www.infobellit.com/",
-      role: "React JS Developer",
+      role: "React Developer",
       description:
         "A client-facing platform to showcase independent software vendors, their products, categories, industries, and detailed vendor information. The platform included a public website for browsing and filtering vendors, as well as a secure admin dashboard for managing vendor data.",
       technologies: [
@@ -215,9 +215,9 @@ const projects = {
     {
       name: "Digital Asset Auction Dashboard Platform (Client project, based in China)",
       duration: "Feb 2023 – Aug 2023",
-      company: "Infobell IT Solutions Pvt Ltd",
+      company: "Infobell IT Solutions Pvt. Limited",
       companyLink: "https://www.infobellit.com/",
-      role: "React JS Developer",
+      role: "React Developer",
       description:
         "Assets & bonds auction platform where users place competitive bids, set reminders, and manage auctions.",
       technologies: [
@@ -238,9 +238,9 @@ const projects = {
     {
       name: "Wealth Management Platform (Client project, based in China)",
       duration: "Nov 2022 – Jan 2023",
-      company: "Infobell IT Solutions Pvt Ltd",
+      company: "Infobell IT Solutions Pvt. Limited",
       companyLink: "https://www.infobellit.com/",
-      role: "React JS Developer",
+      role: "React Developer",
       description:
         "A wealth management platform that blends traditional finance with new technologies to increase transparency.",
       technologies: [...techStacks.frontend, "Github"],
@@ -253,9 +253,9 @@ const projects = {
     {
       name: "Server Resource Management Tool (Internal project → Later proposed & extended into a client solution, now in production)",
       duration: "June 2022 – Oct 2022",
-      company: "Infobell IT Solutions Pvt Ltd",
+      company: "Infobell IT Solutions Pvt. Limited",
       companyLink: "https://www.infobellit.com/",
-      role: "React JS Developer",
+      role: "React Developer",
       description:
         "Tool for managing and optimizing server utilization in the lab.",
       technologies: [
@@ -275,7 +275,7 @@ const projects = {
     {
       name: "Infobell IT Solutions Website (Internal Project, Revamp)",
       duration: "May 2022 – JULY 2022",
-      company: "Infobell IT Solutions Pvt Ltd",
+      company: "Infobell IT Solutions Pvt. Limited",
       companyLink: "https://www.infobellit.com/",
       role: "Front End Developer",
       description:
@@ -293,9 +293,9 @@ const projects = {
       ],
     },
     {
-      name: "HR & Accounting Management System (Client project for a UK-based consulting company)",
+      name: "Accounting Management and HR System (Client project for a UK-based consulting company)",
       duration: "Jul 2021 – Feb 2022",
-      company: "Liquidlab - IT Solutions Services",
+      company: "LiquidLab Infosystems",
       companyLink: "https://liquidlab.in/",
       role: "Full Stack Developer",
       description:
@@ -315,9 +315,9 @@ const projects = {
       ],
     },
     {
-      name: "Real Estate Listing & Management Platform (Client project)",
+      name: "Real-Estate Listing & Management Platform (Client project)",
       duration: "Feb 2021 – Apr 2021",
-      company: "Liquidlab - IT Solutions Services",
+      company: "LiquidLab Infosystems",
       companyLink: "https://liquidlab.in/",
       role: "Full Stack Developer",
       description:
@@ -331,7 +331,7 @@ const projects = {
         "AWS (EC2, S3)",
       ],
       contributions: [
-        "Built fully responsive SPA with React.js.",
+        "Built fully responsive SPA with React.",
         "Integrated APIs and managed state with Redux.",
         "Implemented live chat widget using Tawk.to.",
       ],
@@ -339,7 +339,7 @@ const projects = {
     {
       name: "Product Showcase Website (Client project, Based in Dubai)",
       duration: "Apr 2021 – May 2021",
-      company: "Liquidlab - IT Solutions Services",
+      company: "LiquidLab Infosystems",
       companyLink: "https://liquidlab.in/",
       role: "Full Stack Developer",
       description:
@@ -359,7 +359,7 @@ const projects = {
     {
       name: "Construction Services Website (Client project)",
       duration: "May 2021 – Jun 2021",
-      company: "Liquidlab - IT Solutions Services",
+      company: "LiquidLab Infosystems",
       companyLink: "https://liquidlab.in/",
       role: "Full Stack Developer",
       description:
@@ -374,13 +374,13 @@ const projects = {
       ],
       contributions: [
         "Developed front-end with navbar, main content, footer, and multiple content pages.",
-        "Integrated APIs in React.js.",
+        "Integrated APIs in React.",
       ],
     },
     {
       name: "E-Commerce Website with SEO Optimizations (Client project)",
       duration: "Feb 2022 – May 2022",
-      company: "Liquidlab - IT Solutions Services",
+      company: "LiquidLab Infosystems",
       companyLink: "https://liquidlab.in/",
       role: "Full Stack Developer",
       description:
@@ -410,8 +410,8 @@ export { techStacks, projects, experience, certify };
 //     {
 //       name: "LatticeFi",
 //       duration: "Nov 2022 – Jan 2023",
-//       company: "Infobell IT Solutions Pvt Ltd",
-//       role: "React JS Developer",
+//       company: "Infobell IT Solutions Pvt. Limited",
+//       role: "React Developer",
 //       description:
 //         "A wealth management platform that blends traditional finance with new technologies to increase transparency.",
 //       technologies: [...techStacks.frontend, "Github"],
@@ -424,8 +424,8 @@ export { techStacks, projects, experience, certify };
 //     {
 //       name: "LatticeFi Auctions",
 //       duration: "Feb 2023 – Aug 2023",
-//       company: "Infobell IT Solutions Pvt Ltd",
-//       role: "React JS Developer",
+//       company: "Infobell IT Solutions Pvt. Limited",
+//       role: "React Developer",
 //       description:
 //         "Assets & bonds auction platform where users place competitive bids, set reminders, and manage auctions.",
 //       technologies: [
@@ -446,8 +446,8 @@ export { techStacks, projects, experience, certify };
 //     {
 //       name: "Server Management",
 //       duration: "June 2022 – Oct 2022",
-//       company: "Infobell IT Solutions Pvt Ltd",
-//       role: "React JS Developer",
+//       company: "Infobell IT Solutions Pvt. Limited",
+//       role: "React Developer",
 //       description:
 //         "Tool for managing and optimizing server utilization in the lab.",
 //       technologies: [
@@ -467,7 +467,7 @@ export { techStacks, projects, experience, certify };
 //     {
 //       name: "Inteco",
 //       duration: "Jul 2021 – Feb 2022",
-//       company: "Liquidlab - IT Solutions Services",
+//       company: "LiquidLab Infosystems",
 //       role: "Full Stack Developer",
 //       description:
 //         "HR and Accounting tool project for a UK-based consult trading & contracting company in Qatar.",
@@ -488,7 +488,7 @@ export { techStacks, projects, experience, certify };
 //     {
 //       name: "Kenzorealty",
 //       duration: "Feb 2021 – Apr 2021",
-//       company: "Liquidlab - IT Solutions Services",
+//       company: "LiquidLab Infosystems",
 //       role: "Full Stack Developer",
 //       description:
 //         "Industrial real estate agency website with admin dashboard and customer-facing pages.",
@@ -501,7 +501,7 @@ export { techStacks, projects, experience, certify };
 //         "AWS (EC2, S3)",
 //       ],
 //       contributions: [
-//         "Built fully responsive SPA with React.js.",
+//         "Built fully responsive SPA with React.",
 //         "Integrated APIs and managed state with Redux.",
 //         "Implemented live chat widget using Tawk.to.",
 //       ],
@@ -509,7 +509,7 @@ export { techStacks, projects, experience, certify };
 //     {
 //       name: "Aquax",
 //       duration: "Apr 2021 – May 2021",
-//       company: "Liquidlab - IT Solutions Services",
+//       company: "LiquidLab Infosystems",
 //       role: "Full Stack Developer",
 //       description:
 //         "Website for a water purifiers trading company in Dubai, showcasing product designs and features.",
@@ -528,7 +528,7 @@ export { techStacks, projects, experience, certify };
 //     {
 //       name: "Buildcraft-Urbanscape",
 //       duration: "May 2021 – Jun 2021",
-//       company: "Liquidlab - IT Solutions Services",
+//       company: "LiquidLab Infosystems",
 //       role: "Full Stack Developer",
 //       description:
 //         "Construction and maintenance company website with simple front-end features.",
@@ -542,13 +542,13 @@ export { techStacks, projects, experience, certify };
 //       ],
 //       contributions: [
 //         "Developed front-end with navbar, main content, footer, and multiple content pages.",
-//         "Integrated APIs in React.js.",
+//         "Integrated APIs in React.",
 //       ],
 //     },
 //     {
 //       name: "Aevalona",
 //       duration: "Feb 2022 – May 2022",
-//       company: "Liquidlab - IT Solutions Services",
+//       company: "LiquidLab Infosystems",
 //       role: "Full Stack Developer",
 //       description:
 //         "SEO-friendly ecommerce website with admin dashboard, built using Next.js.",
@@ -575,7 +575,7 @@ export { techStacks, projects, experience, certify };
 //     title: "Basil Resort",
 //     description:
 //       "It's a beautifull resort renting website with real-time schedule updating API.",
-//     tech: "HTML, CSS, JS, React JS, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
+//     tech: "HTML, CSS, JS, React, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
 //     myRole: "Frontend Developer",
 //     challenges:
 //       "Had to analyze the pre-existing codebase, to understand the flow and adapt quickly to the environment and start working.",
@@ -586,7 +586,7 @@ export { techStacks, projects, experience, certify };
 //     title: "Aavelona",
 //     description:
 //       "It was an highly profestional e-commerce website.",
-//     tech: "HTML, CSS, JS, React JS, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
+//     tech: "HTML, CSS, JS, React, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
 //     myRole: "",
 //     challenges: "designed from scratch by me, learned new technology Next JS, and was able to build a fully responsive website, worked on payment gateway backend api and implemented the same on frontend as well, used Redux for state management, deployed to production on AWS.",
 //     outcome: "Created a fully responsive website, deployed to production as well",
@@ -595,7 +595,7 @@ export { techStacks, projects, experience, certify };
 //     title: "Kenzo Realty",
 //     description:
 //       "It's a beautifull resort renting website with real-time schedule updating API.",
-//     tech: "HTML, CSS, JS, React JS, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
+//     tech: "HTML, CSS, JS, React, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
 //     myRole: "Frontend Developer",
 //     challenges:
 //       "Had to analyze the pre-existing codebase, to understand the flow and adapt quickly to the environment and start working.",
@@ -606,7 +606,7 @@ export { techStacks, projects, experience, certify };
 //     title: "Build Craft",
 //     description:
 //       "It was an highly profestional e-commerce website.",
-//     tech: "HTML, CSS, JS, React JS, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
+//     tech: "HTML, CSS, JS, React, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
 //     myRole: "",
 //     challenges: "designed from scratch by me, learned new technology Next JS, and was able to build a fully responsive website, worked on payment gateway backend api and implemented the same on frontend as well, used Redux for state management, deployed to production on AWS.",
 //     outcome: "Created a fully responsive website, deployed to production as well",
@@ -615,7 +615,7 @@ export { techStacks, projects, experience, certify };
 //     title: "Aavelona",
 //     description:
 //       "It was an highly profestional e-commerce website.",
-//     tech: "HTML, CSS, JS, React JS, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
+//     tech: "HTML, CSS, JS, React, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
 //     myRole: "",
 //     challenges: "designed from scratch by me, learned new technology Next JS, and was able to build a fully responsive website, worked on payment gateway backend api and implemented the same on frontend as well, used Redux for state management, deployed to production on AWS.",
 //     outcome: "Created a fully responsive website, deployed to production as well",
@@ -624,7 +624,7 @@ export { techStacks, projects, experience, certify };
 //     title: "Aavelona",
 //     description:
 //       "It was an highly profestional e-commerce website.",
-//     tech: "HTML, CSS, JS, React JS, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
+//     tech: "HTML, CSS, JS, React, Redux, GSAP Animations, MongoDB, AWS S3, AWS EC2 Instance for server",
 //     myRole: "",
 //     challenges: "designed from scratch by me, learned new technology Next JS, and was able to build a fully responsive website, worked on payment gateway backend api and implemented the same on frontend as well, used Redux for state management, deployed to production on AWS.",
 //     outcome: "Created a fully responsive website, deployed to production as well",
