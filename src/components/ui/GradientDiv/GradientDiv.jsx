@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import styles from "./GradientDiv.module.css";
 
 function GradientDiv({ keywords, gradientStart, gradientEnd }) {
   //   const {keywords} = props;
 
-  useEffect(() => {
-    console.log(keywords, "pros");
-  }, []);
+  // useEffect(() => {
+  //   console.log(keywords, "pros");
+  // }, []);
 
   return (
     <div

@@ -30,12 +30,13 @@
   background-clip: text; */
 }
 .logo a {
-  font-weight: 100;
-  font-size: 1rem;
+  font-weight: 900;
+  font-size: 1.5rem;
   text-decoration: none;
   color: var(--color-logo);
-  font-style: italic;
-  font-family: var(--font-family-pacifico);
+  /* font-style: italic; */
+  /* font-family: var(--font-family-pacifico); */
+  font-family: var(--font-family-poppins);
 }
 
 .signature {

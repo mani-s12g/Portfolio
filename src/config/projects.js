@@ -159,13 +159,13 @@ const projects = {
   ],
   projectsArr: [
     {
-      name: "Hardware Benchmarking & Server Management Dashboard (Major Client Project)",
+      name: "Benchmarking Application performance analysis & Server Management Dashboard (Major Client Project)",
       duration: "Nov 2023 – Mar 2025",
       company: "Infobell IT Solutions Pvt. Limited",
       companyLink: "https://www.infobellit.com/",
       role: "Full Stack Developer",
       description:
-        "An enterprise-scale dashboard application for managing servers and benchmarking processors, chips, and platforms. The system provided in-depth analytics, benchmarking runs, performance comparisons, and server management with secure role-based access.",
+        "An enterprise-scale dashboard application for managing servers and benchmarks (TPC, SPEC, MLPerf etc.);. The system provided in-depth analytics, benchmarking runs, evaluating CPU, GPU, and system performance, performance comparisons, and server management with secure role-based access.",
       technologies: [
         "Vue.js",
         ...techStacks.backend.slice(0, 2),
@@ -176,23 +176,23 @@ const projects = {
         "Postman",
       ],
       contributions: [
-        "Developed multiple dashboard modules for platform profiles, processors, chips, and performance benchmarking.",
-        "Created interactive data tables with server-side pagination, filtering, and sorting for large-scale datasets.",
+        "Contributed in Developing and maintaining multiple dashboard modules for various platform profiles, automation framework for provisioning, and application performance analysis.",
+        "Created interactive data tables with server-side pagination, filtering, and sorting for large-scale datasets with core optimizations.",
         "Built visualization components using vue-chartjs, Chart.js and D3.js for benchmark performance graphs and comparison charts.",
         "Enabled triggering, pausing, retrying, and tracking of benchmarking runs with real-time status updates.",
         "Contributed CRUD operations for server creation, assignment to users, and management of server resources (CPU, RAM, disk space).",
-        "Integrated REST APIs for benchmarks and server operations; ensured smooth error handling for failed runs.",
+        "Integrated REST APIs for benchmarks and server operations, ensured smooth error handling for failed runs.",
       ],
     },
 
     {
-      name: "Independent Software Vendor Showcase Platform with Dashboard (Client project, based in USA, leading multinational semiconductor company)",
+      name: "Software Vendor Showcase Platform with Dashboard (Client project, based in USA)",
       duration: "Sep 2023 – Mar 2024",
       company: "Infobell IT Solutions Pvt. Limited",
       companyLink: "https://www.infobellit.com/",
       role: "React Developer",
       description:
-        "A client-facing platform to showcase independent software vendors, their products, categories, industries, and detailed vendor information. The platform included a public website for browsing and filtering vendors, as well as a secure admin dashboard for managing vendor data.",
+        "A client-facing platform to showcase software vendors, their products and detailed vendor information and a secure admin dashboard for managing vendor data.",
       technologies: [
         "HTML",
         "CSS",
@@ -332,7 +332,7 @@ const projects = {
       ],
       contributions: [
         "Built fully responsive SPA with React.",
-        "Integrated APIs and managed state with Redux.",
+        "Integrated necessory APIs and managed state with Redux.",
         "Implemented live chat widget using Tawk.to.",
       ],
     },
@@ -352,8 +352,9 @@ const projects = {
         "AWS (EC2, S3)",
       ],
       contributions: [
-        "Developed a simple project to display product designs and features.",
-        "Deployed and optimized for responsive use.",
+        "Contributed in developing products showcasing website.",
+        "Developed a simple yet fully responsive website to display product designs and clients features.",
+        "Deployed on AWS (EC2 instance, S3) and optimized for better USer Experience.",
       ],
     },
     {
@@ -374,7 +375,7 @@ const projects = {
       ],
       contributions: [
         "Developed front-end with navbar, main content, footer, and multiple content pages.",
-        "Integrated APIs in React.",
+        "Integrated necessory APIs in React.",
       ],
     },
     {
@@ -397,7 +398,7 @@ const projects = {
       ],
       contributions: [
         "Developed fully functional ecommerce website with SEO optimizations.",
-        "Integrated APIs and used Redux for state management.",
+        "Integrated 17+ APIs for user authentication, cart, products, orders soon and used Redux for state management.",
         "All cart features, payment gatway, notifications recommendations, post order detailed schduled responses etc.",
       ],
     },
