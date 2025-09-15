@@ -99,10 +99,11 @@ const experience = {
         ...techStacks.tools,
       ],
       keyAchievements: [
-        "Got oppotunity to work for several internal projects and POC which later became part of clients project.",
-        "Worked on various cutting edge technologies and contributed to many client projects.",
-        "Mentored and led a team of fellow developers on multiple projects.",
-        "Worked on more than 5+ projects in a span of 2 years and 10 months, delivering impactful contributions that led to an onsite client opportunity.",
+        "Contributed to 5+ projects over ~3 years, consistently meeting deadlines and securing an onsite client opportunity.",
+        "Built and optimized React and Vue applications using code splitting, lazy loading, memoization, and caching → 40% faster loads, 60% fewer API calls, and 90–95+ Lighthouse scores",
+        "Contributed to multiple POCs that were transformed into client-facing solutions, creating measurable business impact.",
+        "Mentored and led a team of 4 developers, driving code quality and knowledge sharing",
+        "Leveraged GitHub, Agile/Scrum, and cross-functional collaboration to ensure efficient delivery and scalable solutions"
       ],
     },
     {
@@ -126,12 +127,11 @@ const experience = {
         "Express.js",
       ],
       keyAchievements: [
-        "Got the opportunity to work at a growing startup, where I learned many things and contributed to almost all ongoing projects at that time.",
-        "Worked on 5 projects in total, exploring and implementing new tech stacks.",
+        "Contributed to 5 full-stack projects at a fast-growing startup, covering frontend (React), backend, databases, and deployments.",
+        "Led and mentored a team of 3 developers, managed CI/CD pipelines, and successfully delivered multiple domestic and international client projects on time.",
         "Gained hands-on experience across the full stack — from frontend development to backend, databases, and deployment.",
-        "Led and mentored a team of 4 fellow developers across all projects I worked on.",
+        "Leveraged useState for simple local states, useReducer for complex transitions (improving maintainability by ~30%), and Redux Toolkit for scalable global state management — reducing state-related defects by 40% and accelerating development speed",
         "Developed multiple web applications for diverse clients, both domestic and international, engaging in client meetings and managing multiple projects simultaneously.",
-        "Managed CI/CD pipelines and contributed to overall project delivery and optimization.",
       ],
     },
   ],
@@ -354,7 +354,7 @@ const projects = {
       contributions: [
         "Contributed in developing products showcasing website.",
         "Developed a simple yet fully responsive website to display product designs and clients features.",
-        "Deployed on AWS (EC2 instance, S3) and optimized for better USer Experience.",
+        "Deployed on AWS (EC2 instance, S3) and optimized for better User Experience.",
       ],
     },
     {

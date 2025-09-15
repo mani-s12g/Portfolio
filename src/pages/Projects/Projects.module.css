@@ -64,12 +64,18 @@
 
 .customMenu :global(.MuiMenuItem-root:hover) {
   background-color: #333 !important;
+  /* border-radius: 20px !important; */
 }
 
 .customMenu :global(.Mui-selected) {
   background-color: #444 !important;
   color: #80ffea !important;
 }
+
+/* .customMenu.MuiPaper-root {
+  width: 220px !important;
+  max-width: 220px !important;
+} */
 
 /* Tabs wrapper */
 .customTabs {

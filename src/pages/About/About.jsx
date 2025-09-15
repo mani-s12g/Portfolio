@@ -55,7 +55,12 @@ function About() {
 
       {/* <button className={styles.aboutBtn}>Copy Bio.</button> */}
       <CopyBio bioText={about.bioCopy} />
-      <button className={styles.aboutBtn}>Updating Resume...</button>
+      <button
+        className={styles.aboutBtn}
+        onClick={() => window.open("/FinalManiResume.pdf", "_blank")}
+      >
+        📄 Visit Resume
+      </button>
 
       <section className={styles.careerSection}>
         <p>Career</p>

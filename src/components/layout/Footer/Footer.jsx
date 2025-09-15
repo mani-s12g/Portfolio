@@ -14,7 +14,7 @@ function Footer() {
           truly.
         </p>
         <p>
-          Built with ❤️ and Passion using <strong>React</strong>{" "}
+          Built with Passion using <strong>React</strong>{" "}
           and <strong>CSS</strong>, deployed on <strong>Vercel</strong>.
         </p>
       </div>

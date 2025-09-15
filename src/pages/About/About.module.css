@@ -31,15 +31,15 @@
 }
 
 .aboutBtn {
+    margin-top: 1rem;
+
   font-size: 0.75em;
   padding: 1em 1em;
   background-color: var(--color-background);
   border: 0px;
-  letter-spacing: 0px;
+  letter-spacing: 1.2px;
   color: var(--colors-white);
-  font-size: var(--font-size-small);
   transition: all 0.3s;
-  font-weight: var(--font-weight-semibold);
 }
 
 .aboutBtn:hover {

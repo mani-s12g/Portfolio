@@ -91,12 +91,26 @@ function Projects() {
             className={styles.customSelect}
             value={filter}
             onChange={handleChange}
-            size="small"
+            // size="small"
+            sx={{
+              width: {
+                xs: 280, // 📱 fixed width on mobile
+                sm: 300, // 💻 larger width
+              },
+            }}
             MenuProps={{
               classes: { paper: styles.customMenu }, // for dropdown menu
+              // PaperProps: {
+              //   sx: {
+              //     width: {
+              //       xs: 200, // 📱 fixed width on mobile
+              //       sm: 250, // 💻 larger width on tablet+
+              //     },
+              //   },
+              // },
             }}
             // sx={{
-            //   minWidth: 200,
+            // minWidth: 200,
             //   borderRadius: "12px",
             //   color: "#f5f5f5", // text color inside select
             //   border: "1px solid #555", // custom border
@@ -170,13 +184,24 @@ function Projects() {
               onMouseLeave={handleCardMouseLeave}
             >
               <div className={styles.cardContent}>
-                <p className={styles.projectName}>{item.name.replace(/\s*\(.*?\)\s*/g, "").split(" ").slice(0, 2).join(" ")}</p>
+                <p className={styles.projectName}>
+                  {item.name
+                    .replace(/\s*\(.*?\)\s*/g, "")
+                    .split(" ")
+                    .slice(0, 2)
+                    .join(" ")}
+                </p>
                 <span className={styles.projectCompany}>
                   <strong> {item.company}</strong>
                 </span>
                 <div className={styles.projectDuration}>{item.duration}</div>
                 <p className={styles.projectdescription}>{item.description}</p>
-                <span className={styles.moreDetails} onClick={() => handleMoreClick(item.name)}>More →</span>
+                <span
+                  className={styles.moreDetails}
+                  onClick={() => handleMoreClick(item.name)}
+                >
+                  More →
+                </span>
               </div>
             </div>
           );
