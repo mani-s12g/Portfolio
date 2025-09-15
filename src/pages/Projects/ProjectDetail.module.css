@@ -6,7 +6,7 @@
   margin: 1.2rem 0rem;
 }
 .projectDetailSection {
-  font-family: var(--font-family-poppins);
+  font-family: var(--font-family-roboto);
   line-height: 2rem;
   word-spacing: 3.5px;
   margin: 3rem 0rem 4.5rem 0rem;
@@ -20,7 +20,7 @@
 
 }
 .projectDetailSection p {
-  /* font-family: var(--font-family-poppins);
+  /* font-family: var(--font-family-roboto);
   color: var(--colors-white);
   margin-bottom: 0rem;
   font-size: var(--font-size-h5);
@@ -41,7 +41,7 @@
   color: rgb(87, 152, 218);
 }
 .subHeadings {
-  font-family: var(--font-family-poppins);
+  font-family: var(--font-family-roboto);
   color: var(--color-white-muted-3);
   font-size: var(--font-size-h6);
   margin: 0.2rem 0rem 0rem 0rem;
