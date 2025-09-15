@@ -1,3 +1,7 @@
+This portfolio will be updating constantly.. More room for stylings, animations, icons , performances, UI/UX all.
+
+Portfolio describes my professional journey throughout time, experiences i had learning Web developement, React and many libraries, what i learned from them and many things.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
