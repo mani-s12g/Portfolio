@@ -3,6 +3,7 @@ import styles from "./Footer.module.css";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import CodeOutlined from "@mui/icons-material/CodeOutlined";
 import { motion } from "framer-motion";
 
 function Footer() {
@@ -47,6 +48,14 @@ function Footer() {
         >
           <span className={styles.text}>github</span>
           <GitHubIcon className={styles.icon} />
+        </li>
+
+        <li
+          className={styles.github}
+          onClick={() => window.open("https://leetcode.com/u/manikantas/", "_blank")}
+        >
+          <span className={styles.text}>leetcode</span>
+          <CodeOutlined className={styles.icon} />
         </li>
       </ul>
     </footer>
