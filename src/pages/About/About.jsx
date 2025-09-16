@@ -19,7 +19,7 @@ function About() {
       />
       <section className={styles.bioSection}>
         <div className={styles.headshot}>
-          <img src={me} alt="" srcset="" />
+          <img src={me} alt="manikanta photo" srcset="" />
         </div>
         <div className={`${styles.bio} inter-body`}>
           <p>
