@@ -48,7 +48,7 @@ const aboutDetails = {
     ".",
   ],
   bioCopy:
-    "Manikanta is a programmer based in Bengaluru, India, with 4+ experience as a Software Engineer at Infobell IT and a Software Development Associate at LiquidLab Infosystems. Passionate about building and sharing web applications, he has worked on end-to-end development — from coding, reviewing, and testing to leading teams, mentoring peers, and collaborating with product designers, backend developers, and DevOps teams to deliver full-fledged projects and solutions.",
+    "Manikanta is a frontend/full-stack developer based in Bengaluru, India, with 4+ years of professional experience. He has worked as a Software Engineer at Infobell IT and a Software Development Associate at LiquidLab Infosystems. Passionate about building and sharing web applications, he has worked on end-to-end development — from coding, reviewing, and testing to leading teams, mentoring peers, and collaborating with product designers, backend developers, and DevOps teams to deliver full-fledged projects and solutions.",
 
   headShotPic: "",
   career: [
