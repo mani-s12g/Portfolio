@@ -4,6 +4,7 @@ import about from "../../config/about";
 import styles from "./About.module.css";
 // import me from "../../assets/images/meBG.png";
 import me from "../../assets/images/mani.jpg";
+// import me from "../../assets/images/mani1.jpg";
 import EmphasisText from "../../components/ui/GradientDiv/Emphasis/EmphasisText";
 import CopyBio from "../../components/ui/GradientDiv/CopyBio/CopyBio";
 import ResumeButton from "../../components/ui/motions/ResumeButton/ResumeButton";
