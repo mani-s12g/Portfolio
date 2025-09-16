@@ -2,14 +2,33 @@
   margin-bottom: 3rem;
 }
 
-.projectDetailSection .roleStyles {
-  margin: 1.2rem 0rem;
+.detailDiv {
+  margin: 1rem 0rem 2rem 0rem;
+  border: 1px solid #292828;
+  border-radius: 3px;
+  padding: 0.7em 1em;
 }
+
+.detailDiv:hover {
+  background: #0f0f0f2d;
+}
+
+.projectDetailSection .roleStyles .mainrole {
+  font-size: var(--font-size-h5);
+  color: var(--color-white-muted-3);
+
+  /* font-weight: var(--font-weight-bold); */
+}
+.projectDetailSection .roleStyles {
+  margin: 0.5rem 0rem 2rem 0rem;
+}
+
 .projectDetailSection {
   font-family: var(--font-family-roboto);
-  line-height: 2rem;
+  line-height: 1.8rem;
   word-spacing: 3.5px;
-  margin: 3rem 0rem 4.5rem 0rem;
+  margin: 3rem 0rem 2rem 0rem;
+  color: var(--color-white-muted-3);
 }
 .projectDetailSection .duration {
   float: right;
@@ -17,7 +36,6 @@
   font-size: 13px;
   font-family: var(--font-family-roboto);
   font-weight: var(--font-weight-regular);
-
 }
 .projectDetailSection p {
   /* font-family: var(--font-family-roboto);
@@ -38,14 +56,15 @@
   font-weight: var(--font-weight-regular);
 }
 .companyLink a {
-  color: rgb(87, 152, 218);
+  /* color: rgb(87, 152, 218); */
+  color: #ffd880 !important;
 }
 .subHeadings {
   font-family: var(--font-family-roboto);
   color: var(--color-white-muted-3);
   font-size: var(--font-size-h6);
-  margin: 0.2rem 0rem 0rem 0rem;
-  font-weight: var(--font-weight-semibold);
+  margin: 0.5rem 0rem 0rem 0rem;
+  font-weight: var(--font-weight-regular);
 }
 .experience ul li {
   margin-left: 1rem;

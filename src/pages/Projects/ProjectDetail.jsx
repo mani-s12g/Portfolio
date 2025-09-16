@@ -22,33 +22,39 @@ function ProjectDetail() {
     <div>
       <section className={styles["projectDetailSection"]}>
         <h2>Project Details</h2>
-        <hr />
-        <div className={styles.roleStyles}>
-          <span>
-            <strong>{project.role}</strong>
-            <small className={styles.duration}>{project.duration}</small>
-          </span>
-          <p className={styles.companyLink}>
-            <a href={`${project.companyLink}`} target="_blank">
-              @{project.company}
-            </a>
-          </p>
-        </div>
-        <p className={styles.subHeadings}>Tech Stack</p>
-        <ChipsList items={project.technologies} color="info" />
+        {/* <hr /> */}
+        <div className={styles.detailDiv}>
+          <div className={styles.roleStyles}>
+            <span>
+              <strong className={styles.mainrole}>{project.role}</strong>
+              <small className={styles.duration}>{project.duration}</small>
+            </span>
+            <p className={styles.companyLink}>
+              <a href={`${project.companyLink}`} target="_blank">
+                @{project.company}
+              </a>
+            </p>
+          </div>
+          <p className={styles.subHeadings}>Tech Stack</p>
+          <ChipsList
+            items={project.technologies}
+            color="#ffd880"
+            textColor="#08070b"
+          />
 
-        <div className={styles.experience}>
-          <div className={styles["exp-div-inner"]}>
-            <p className={styles.subHeadings}>Project Title</p>
-            <p className={styles.subPara}>{project.name}</p>
-            <p className={styles.subHeadings}>Description</p>
-            <p className={styles.subPara}>{project.description}</p>
-            <p className={styles.subHeadings}>Contributions</p>
-            <ul className="inter-body" style={{ marginTop: "-8px" }}>
-              {project.contributions.map((contribution, index) => (
-                <li key={index}>{contribution}</li>
-              ))}
-            </ul>
+          <div className={styles.experience}>
+            <div className={styles["exp-div-inner"]}>
+              <p className={styles.subHeadings}>Project Title</p>
+              <p className={styles.subPara}>{project.name}</p>
+              <p className={styles.subHeadings}>Description</p>
+              <p className={styles.subPara}>{project.description}</p>
+              <p className={styles.subHeadings}>Contributions</p>
+              <ul className="inter-body" style={{ marginTop: "-8px" }}>
+                {project.contributions.map((contribution, index) => (
+                  <li key={index}>{contribution}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>

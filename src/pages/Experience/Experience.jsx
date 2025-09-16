@@ -35,13 +35,13 @@ function Experience() {
 
       <section className={styles["experienceSection"]}>
         <h2>Professional Experience</h2>
-        <hr />
+        {/* <hr /> */}
         <div>
           {experience.expArr.map((item, index) => {
             return (
               <div key={index} className={styles.experience}>
                 <div className={styles["exp-div-inner"]}>
-                  <p>{item.designation}</p>
+                  <p className={styles.mainrole}>{item.designation}</p>
                   <span>
                     <strong>{item.company}</strong>
                     <p className={styles.duration}>
@@ -49,10 +49,10 @@ function Experience() {
                     </p>
                   </span>
                   <div className={styles.chipss}>
-                    <ChipsList items={item.technologies} color="info" />
+                    <ChipsList items={item.technologies} color="#8db3f7" textColor="#08070b" />
                   </div>
                   <p className={styles.achievements}>Key Achievements</p>
-                  <ul className="inter-body" style={{marginTop: "-8px"}}>
+                  <ul className="inter-body" style={{ marginTop: "-8px" }}>
                     {item.keyAchievements.map((achievement, index) => (
                       <li key={index}>{achievement}</li>
                     ))}
@@ -62,9 +62,8 @@ function Experience() {
                     className={styles.expViewBtn}
                     onClick={() => handleClick(item.company)}
                   >
-                    View related projects →
+                    Related Projects →
                   </button>
-                  {/* <hr /> */}
                 </div>
               </div>
             );

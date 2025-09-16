@@ -85,8 +85,26 @@
 .nav ul::-webkit-scrollbar {
   display: none; /* Hide scrollbar (Chrome, Safari) */
 }
+.nav ul::-webkit-scrollbar {
+  height: 7px; /* horizontal scrollbar height */
+}
+
+.nav ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nav ul::-webkit-scrollbar-thumb {
+  background: #3f3d3d; /* customize color */
+  border-radius: 3px;
+}
+
+.nav ul {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--colors-slategray) transparent; /* thumb color + track */
+}
 .nav li {
   flex: 0 0 auto; /* Prevent shrinking, keeps items inline */
+  padding-bottom: 0.5rem;
 }
 
 .nav button {

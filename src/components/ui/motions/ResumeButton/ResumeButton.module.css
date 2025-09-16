@@ -1,0 +1,30 @@
+.aboutBtn {
+  margin-top: 1rem;
+  font-size: 0.75em;
+  padding: 1em 1em;
+  background-color: var(--color-background);
+  border: 0px;
+  letter-spacing: 1.2px;
+  color: var(--colors-white);
+  transition: all 0.3s;
+
+  display: flex;
+  align-items: center;
+  gap: 6px; 
+}
+
+.aboutBtn:hover {
+  border: 0px solid transparent;
+  border-radius: 6px;
+  padding: 1em 1em;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.aboutBtn svg {
+  transition: transform 0.4s ease;
+}
+
+.aboutBtn:hover svg {
+  transform: translateY(6px);
+}

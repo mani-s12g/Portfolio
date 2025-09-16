@@ -1,23 +1,35 @@
 .exp-div-inner {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
+}
+.expLayout {
+  
 }
 
 .experienceSection {
   line-height: 1.8rem;
   word-spacing: 3.5px;
-  margin: 3rem 0rem 4.5rem 0rem;
+  margin: 3rem 0rem 2rem 0rem;
   font-family: var(--font-family-roboto);
   color: var(--color-white-muted-3);
 }
-.experienceSection p {
+.colorChips {
+  color: #292828 !important;
+  background: #ffffff;
+}
+.experienceSection .mainrole {
+  font-family: var(--font-family-roboto);
   color: var(--color-white-muted-3);
-  margin-bottom: 0rem;
   font-size: var(--font-size-h5);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 .experience {
-  margin: 1.2rem 0rem 2.2rem 0rem;
-  /* cursor: pointer; */
+  margin: 1rem 0rem 2rem 0rem;
+  border: 1px solid #292828;
+  border-radius: 3px;
+  padding: 0.7em 1em;
+}
+.experience:hover {
+  background: #0f0f0f2d;
 }
 
 .exp-div-inner span strong {
@@ -44,10 +56,16 @@
 }
 
 .experience p, .achievements {
+  /* color: var(--color-white-muted-3); */
+  /* font-size: var(--font-size-small); */
+  /* margin-bottom: 0rem; */
+  /* font-weight: var(--font-weight-semibold); */
+
+  font-family: var(--font-family-roboto);
   color: var(--color-white-muted-3);
-  font-size: var(--font-size-small);
-  margin-bottom: 0rem;
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h6);
+  margin: 0.5rem 0rem 0rem 0rem;
+  font-weight: var(--font-weight-regular);
 }
 .experience ul li {
   margin-left: 1rem;
@@ -79,6 +97,7 @@
 }
 
 .expViewBtn {
+  margin-top: 1rem;
   font-size: 0.75em;
   padding: 1em 1em;
   background-color: var(--color-background);

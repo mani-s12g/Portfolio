@@ -1,27 +1,5 @@
-/* .aboutBtn {
-    margin-top: 1rem;
-  font-size: 0.75em;
-  padding: 1em 1em;
-  background-color: var(--color-background);
-  border: 0px;
-  letter-spacing: 0px;
-  color: var(--colors-white);
-  font-size: var(--font-size-small);
-  transition: all 0.3s;
-  font-weight: var(--font-weight-semibold);
-}
-
-.aboutBtn:hover {
-  border: 0px solid transparent;
-  border-radius: 6px;
-  padding: 1em 1em;
-  background: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-} */
-
 .aboutBtn {
-    margin-top: 1rem;
-
+  margin-top: 1rem;
   font-size: 0.75em;
   padding: 1em 1em;
   background-color: var(--color-background);
@@ -29,6 +7,10 @@
   letter-spacing: 1.2px;
   color: var(--colors-white);
   transition: all 0.3s;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .aboutBtn:hover {
@@ -37,4 +19,31 @@
   padding: 1em 1em;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+}
+.container { position: relative; display: inline-block; }
+.btn { display: flex; align-items: center; gap: 4px; }
+
+/* Mobile: notification at bottom */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #238636;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 9999;
+}
+
+/* Desktop: above button */
+@media (min-width: 600px) {
+  .notification {
+    position: absolute;
+    bottom: auto;
+    top: -35px;
+  }
 }
