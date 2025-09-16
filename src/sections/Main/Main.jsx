@@ -19,16 +19,25 @@ function Main() {
           >
             <span className={styles.glow}>Manikanta</span>
           </div>
-          </h1>
+        </h1>
 
-        <p>
-          <strong>
+        <div className={styles.wordsDiv}>
+          <div className={styles.wordsAnimate}>
+            <span className={styles.frontWhite}>FULL STACK </span>
+            <span className={styles.frontWhite}>REACT </span>
             <span className={styles.frontWhite}>FRONTEND </span>
+            <span className={styles.frontWhite}>UI/UX </span>
+            <span className={styles.frontWhite}>FULL STACK </span>
+          </div>
+          <p>
             <span className={styles.frontGrey}>DEVELOPER</span>
-          </strong>
-        </p>
-        <h4 className={styles.shimmer} data-text="Passionate about building fast, accessible, & visually striking web
-          applications.">
+          </p>
+        </div>
+        <h4
+          className={styles.shimmer}
+          data-text="Passionate about building fast, accessible, & visually striking web
+          applications."
+        >
           Passionate about building fast, accessible, & visually striking web
           applications.
         </h4>

@@ -1,6 +1,6 @@
 // import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 // Custom Cursor
 import CursorBall from "./components/common/CursorBall/CursorBall";
 // App-Layout
@@ -24,35 +24,45 @@ import Certifications from "./pages/Certifications/Certifications";
 import CustomCursor from "./components/common/CustomCursor/CustomCursor";
 // import applyGradientCursor from 'gradient-cursor';
 
-function App() {
-  // useEffect(() => {
-  //   applyGradientCursor({
-  //     backgroundColor: "#212024",       // page background (optional)
-  //     gradientColor: "40, 40, 60",       // RGB spotlight color
-  //     gradientSize: "15vmax"             // size of the spot
-  //   });
-  // }, []);
+// Page transition wrapper
+const PageTransition = ({ children }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    transition={{ duration: 0.5, ease: "easeInOut" }}
+  >
+    {children}
+  </motion.div>
+);
+
+function AnimatedRoutes() {
+  const location = useLocation();
+
   return (
-    <>
-      {/* <CursorBall /> */}
-      {/* <CustomCursor /> */}
-      <Router>
-        <ScrollToTop /> {/* 🔹 Force scroll to top on route change */}
-        {/* routes */}
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/certifications" element={<Certifications />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/projects/:projectSlug" element={<ProjectDetail />} />
-          </Route>
-        </Routes>
-      </Router>
-    </>
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route element={<Layout />}>
+          <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+          <Route path="/about" element={<PageTransition><About /></PageTransition>} />
+          <Route path="/experience" element={<PageTransition><Experience /></PageTransition>} />
+          <Route path="/skills" element={<PageTransition><Skills /></PageTransition>} />
+          <Route path="/projects" element={<PageTransition><Projects /></PageTransition>} />
+          <Route path="/certifications" element={<PageTransition><Certifications /></PageTransition>} />
+          <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+          <Route path="/projects/:projectSlug" element={<PageTransition><ProjectDetail /></PageTransition>} />
+        </Route>
+      </Routes>
+    </AnimatePresence>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <AnimatedRoutes />
+    </Router>
   );
 }
 

@@ -5,6 +5,7 @@ import styles from "./About.module.css";
 import me from "../../assets/images/meBG.png";
 import EmphasisText from "../../components/ui/GradientDiv/Emphasis/EmphasisText";
 import CopyBio from "../../components/ui/GradientDiv/CopyBio/CopyBio";
+import ResumeButton from "../../components/ui/motions/ResumeButton/ResumeButton";
 
 function About() {
   return (
@@ -54,13 +55,17 @@ function About() {
       </div>
 
       {/* <button className={styles.aboutBtn}>Copy Bio.</button> */}
-      <CopyBio bioText={about.bioCopy} />
-      <button
+      <div className={styles.bioFlex}>
+        <CopyBio bioText={about.bioCopy} />
+        <ResumeButton />
+      </div>
+      {/* <button
         className={styles.aboutBtn}
         onClick={() => window.open("/FinalManiResume.pdf", "_blank")}
       >
-        📄 Visit Resume
-      </button>
+        
+      📄 Visit Resume
+      </button> */}
 
       <section className={styles.careerSection}>
         <p>Career</p>
@@ -79,6 +84,17 @@ function About() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <section className={styles.careerSection}>
+        <p>Education</p>
+        <div className={styles.career}>
+          <span><strong>Ramaiah Institute Of Technology</strong></span>
+          <p>
+            BE - Bachelor of Engineering in Telecommunications
+          </p>
+            <span>2016 - 2019 • Bangalore, India</span>
         </div>
       </section>
     </div>
