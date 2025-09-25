@@ -33,11 +33,11 @@ const aboutDetails = {
 
     "I love using ",
     { text: "dark mode designs", color: "var(--colors-lightgray)" },
-    " on websites. I’ve recently started ",
-    { text: "contributing to open source", color: "var(--colors-lightgray)" },
-    " and working on ",
-    { text: "side projects", color: "var(--colors-lightgray)" },
-    " to grow my skills.\n",
+    " on websites.",
+    // { text: "contributing to open source", color: "var(--colors-lightgray)" },
+    // " and working on ",
+    // { text: "side projects", color: "var(--colors-lightgray)" },
+    // " to grow my skills.\n",
 
     "Beyond coding, I stay active with ",
     { text: "freestyle exercise", color: "var(--colors-lightgray)" },
