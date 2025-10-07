@@ -1,8 +1,8 @@
+import { useState } from "react";
+import styles from "./CopyBio.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import DescriptionIcon from "@mui/icons-material/Description";
 
-import { useState } from "react";
-import styles from "./CopyBio.module.css";
 
 function CopyBio({ bioText }) {
   //   const bioText = `Passionate about building fast, accessible, & visually striking web applications.`;
