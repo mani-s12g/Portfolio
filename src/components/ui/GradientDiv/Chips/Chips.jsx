@@ -8,19 +8,10 @@ const ChipsList = ({ items = [], color, textColor, size = "small" }) => {
     <Stack direction="row" flexWrap="wrap" gap={1}>
       {items.map((item, index) => (
         <Chip
-          // className="colorChips"
           key={index}
           label={item}
           variant="outlined"
-          // color={color}
           size={size}
-          // sx={{
-          //   fontSize: "0.7rem",
-          //   borderRadius: "12px",
-          //   marginTop: "0.3rem",
-          //   marginBottom: "0rem",
-          // }}
-
           sx={{
             padding: "2px",
             fontSize: "0.7rem",

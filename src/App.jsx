@@ -1,28 +1,21 @@
-// import { useEffect } from "react";
+import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-// Custom Cursor
-import CursorBall from "./components/common/CursorBall/CursorBall";
 // App-Layout
 import Layout from "./layout/Layout";
-
 // Scroll to Top
 import ScrollToTop from "./components/common/ScrollToTop";
-
-// Pages
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
-import Projects from "./pages/Projects/Projects";
-import Skills from "./pages/Skills/Skills";
-
 // Global Styles
 import "./assets/styles/global.css";
-import Experience from "./pages/Experience/Experience";
-import ProjectDetail from "./pages/Projects/ProjectDetail";
-import Certifications from "./pages/Certifications/Certifications";
-import CustomCursor from "./components/common/CustomCursor/CustomCursor";
-// import applyGradientCursor from 'gradient-cursor';
+// Pages
+const Home = lazy(() => import("./pages/Home/Home"));
+const About = lazy(() => import("./pages/About/About"));
+const Contact = lazy(() => import("./pages/Contact/Contact"));
+const Projects = lazy(() => import("./pages/Projects/Projects"));
+const Skills = lazy(() => import("./pages/Skills/Skills"));
+const Experience = lazy(() => import("./pages/Experience/Experience"));
+const ProjectDetail = lazy(() => import("./pages/Projects/ProjectDetail"));
+const Certifications = lazy(() => import("./pages/Certifications/Certifications"));
 
 // Page transition wrapper
 const PageTransition = ({ children }) => (
@@ -41,6 +34,7 @@ function AnimatedRoutes() {
 
   return (
     <AnimatePresence mode="wait">
+      <Suspense fallback={<p>Getting things ready...</p>}>
       <Routes location={location} key={location.pathname}>
         <Route element={<Layout />}>
           <Route path="/" element={<PageTransition><Home /></PageTransition>} />
@@ -53,6 +47,7 @@ function AnimatedRoutes() {
           <Route path="/projects/:projectSlug" element={<PageTransition><ProjectDetail /></PageTransition>} />
         </Route>
       </Routes>
+      </Suspense>
     </AnimatePresence>
   );
 }

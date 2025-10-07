@@ -12,30 +12,12 @@
   width: 100%;
   text-align: center;
   margin-bottom: 0.5rem; /* Space between logo and nav */
-
-  /* display: inline-block;
-  background: linear-gradient(
-    270deg,
-    #ff0080,
-    #7928ca,
-    #2afadf,
-    #ff8c00,
-    #ff0080
-  );
-  background-size: 1000% 1000%;
-  animation: gradientFlow 20s ease infinite;
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text; */
 }
 .logo a {
   font-weight: 900;
   font-size: 1.5rem;
   text-decoration: none;
   color: var(--color-logo);
-  /* font-style: italic; */
-  /* font-family: var(--font-family-pacifico); */
   font-family: var(--font-family-poppins);
 }
 
@@ -43,12 +25,6 @@
   font-family: "Great Vibes", cursive;
   font-size: 3rem;
   color: white;
-}
-
-@keyframes gradientFlow {
-  /* 0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; } */
 }
 
 .nav {
@@ -128,11 +104,6 @@
   border-radius: 2px;
 }
 
-/* .nav li:hover {
-  padding: 0.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-} */
 .nav ul a:hover {
   color: var(--colors-white);
 }
@@ -151,13 +122,6 @@
   opacity: 0;
 }
 
-/* .theme {
-  border: none;
-  background: var(--color-background);
-  color: var(--color-text);
-  transition: background 0.1s ease, color 0.2s ease;
-} */
-
 @media (min-width: 768px) {
   .header {
     flex-direction: row;
@@ -168,12 +132,6 @@
   .logo {
     margin: 0;
     text-align: left;
-  }
-  .logo a {
-    /* color: var(--color-white-muted-1); */
-    /* text-decoration: none; */
-    /* font-size: 3rem; */
-    /* transition: color 0.4s ease; */
   }
   .nav {
     overflow: visible; /* remove scrollbar */
